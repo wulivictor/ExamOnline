@@ -1,0 +1,23 @@
+<view class="page-benchmark">
+    <view class="title" wx:if="{{score == 10}}"> 恭喜您通过挑战，本次得分为：10分 </view>
+    <view class="title" wx:else> 您未通过本次挑战，再来一次试试吧 </view>
+    <view class="items">
+        <block wx:for="{{products}}" wx:for-index="idx" wx:for-item="product">
+            <view class="someproduct">
+                <view class="image"><image style="width:32px;height:32px; background-color: #eeeeee;" mode="scaleToFill" src="{{'https://www.xiaomutong.com.cn/public/question/'+product.image}}"></image></view>
+                <view class="title">{{product.name}}-{{types[rights[idx]-1]}}</view>
+                <view class="flag">{{answers[idx] == 1 ? '✅' : '❎'}}</view>
+            </view>       
+        </block>
+    </view>
+    <view class="next">
+    <button type="primary" bindtap="toNext">继续挑战</button>
+    </view>
+    <view class="next">
+        <button type="default" bindtap="toHome">返回首页</button>
+    </view>  
+    <view class="adContainer">
+    <ad unit-id="adunit-c2394e910b7359b6"></ad>
+    </view>
+
+</view>

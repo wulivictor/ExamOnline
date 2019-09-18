@@ -1,0 +1,11 @@
+<view class="page-wrapper">
+    <view class="tip">
+        物品太过独特，小编会在12小时内补充进去，建议您晚点试试
+    </view>
+    <view class="action">
+        <button type="primary" bindtap="bindQuestion">开始答题</button>
+    </view>  
+    <view class="adContainer">
+        <ad unit-id="adunit-2f4b14df029312bf"></ad>
+    </view>
+</view>

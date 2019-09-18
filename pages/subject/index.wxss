@@ -1,0 +1,13 @@
+.page-wrapper{
+    background-color: #f8f8f8;
+    padding: 10rpx;
+    height: -webkit-fill-available;
+    text-align: center;
+  }
+  image{
+    width: 100%;
+  }
+  .img{
+    width: 90%;
+    text-align: center;
+  }

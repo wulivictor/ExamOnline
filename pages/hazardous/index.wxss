@@ -1,0 +1,58 @@
+.page-wrapper{
+    width: 100%;
+    height: -webkit-fill-available;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.page-wrapper .home{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    vertical-align: middle;
+    border-radius: 65px;
+    background-color: #07c160;
+    color: #fff;
+    opacity: 0.8;
+}
+.page-wrapper .share button{
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    vertical-align: middle;
+    border-radius: 65px;
+    background-color: #07c160;
+    color: #fff;
+    opacity: 0.8;
+}
+.page-wrapper .title{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    border-bottom: 1px solid #CCEEFF;
+    width: 90%;
+    margin: 0 auto;
+}
+.page-wrapper .desc{
+    text-align: left;
+    border-bottom: 1px solid #CCEEFF;
+    width: 90%;
+    margin: 0 auto;    
+    padding: 10px 1px; 
+}
+.page-wrapper .imgList-li{
+    padding-top: 10px;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-wrapper .adContainer {
+    position: absolute;
+    bottom: 0;   
+    margin-top: 5px;
+    width: 100%;
+}

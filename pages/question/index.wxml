@@ -1,0 +1,34 @@
+<view class="page-wrapper">
+    <view class="question">
+        <view class="sortcode">{{sortcode}}/10</view>
+        <view class="product">
+            <image style="" src="{{image}}"></image>
+        </view>
+        <view class="title">{{objects[idx]}}</view>
+        <view class="options">
+            <view class="optionimage" bindtap="bindCheck1">
+                <image style="" src="/icons/icon1.png"></image>
+            </view>
+            <view class="optionimage" bindtap="bindCheck2">
+                <image style="" src="/icons/icon2.png"></image>
+            </view>
+            <view class="optionimage" bindtap="bindCheck3">
+                <image style="" src="/icons/icon3.png"></image>
+            </view>
+            <view class="optionimage" bindtap="bindCheck4">
+                <image style="" src="/icons/icon4.png"></image>
+            </view>
+        </view>
+        <view class="actons">
+            <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+            </radio-group>
+        </view>
+    </view>
+
+    <view class="btn-area">
+        <button type="primary" bindtap="bindButtonTap">{{buttonText}}</button>
+    </view>                                  
+</view>

@@ -1,0 +1,13 @@
+<view class="page-wrapper">
+  <view class="home" bindtap="goHome">首页</view>
+  <view class="share" bindtap="goShare"><button open-type="share">分享</button></view>
+  <view class="title">{{name}}属于有害垃圾</view>
+  <view class="desc">是指对人体健康或者自然环境造成直接或者潜在危害的零星废弃物，单位集中产生的除外。主要包括废电池、废灯管、废药品、废油漆桶等。</view>
+  <view class='imgList-li' wx:for='{{imgArr}}'>
+    <image class='paycode' src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+  </view>
+  <view class="adContainer">
+  <ad unit-id="adunit-2f4b14df029312bf"></ad>
+  </view>
+
+</view>

@@ -1,0 +1,31 @@
+<view class='page-wrapper'>
+  <view class='view1' bindtap="go1">
+    <view>
+    <image mode="scaleToFill"	src="https://www.xiaomutong.com.cn/public/subject/Snipaste_2019-08-24_08-29-08.png" style="width:100%; background-color: #eeeeee;" role="img"></image>
+    </view>
+    <view class="title">什么是湿垃圾?</view>
+  </view>
+  <view class='view2' bindtap="go2">
+    <view>
+    <image mode="scaleToFill" src="https://www.xiaomutong.com.cn/public/subject/Xnip2019-08-21_19-22-12.jpg" style="width:100%; background-color: #eeeeee;" role="img"></image>
+    </view>
+    <view class="title">什么是干垃圾?</view>
+  </view>
+  <view class='view3' bindtap="go3">
+    <view>
+    <image mode="scaleToFill" src="https://www.xiaomutong.com.cn/public/subject/Xnip2019-08-21_19-20-06.jpg" style="width:100%; background-color: #eeeeee;" role="img"></image>
+    </view>
+    <view class="title">什么是可回收物?</view>
+  </view>
+  <view class='view4' bindtap="go4">
+    <view>
+    <image mode="scaleToFill" src="https://www.xiaomutong.com.cn/uploads/tmp_070110c71f15767eccaa06d111e2c373.jpg" style="width:100%; background-color: #eeeeee;" role="img"></image>
+    </view>
+    <view class="title">什么是有害垃圾?</view>
+  </view>
+  <view class="adContainer">
+  <ad unit-id="adunit-ecdf075ac20d0754"></ad>
+  </view>
+  
+
+</view>

@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/activity/index",
+    "pages/query/index",
+    "pages/blackboard/index",
+    "pages/game/index",
+    "pages/home/index",
+    "pages/myinfo/index",
+    "pages/product/index",
+    "pages/question/index",
+    "pages/hazardous/index",
+    "pages/residual/index",
+    "pages/household/index",
+    "pages/recyclable/index",
+    "pages/result/index",
+    "pages/answer/index",
+    "pages/question2/index",
+    "pages/question3/index",
+    "pages/subject/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/logs/index",
+    "pages/authorize/index",
+    "pages/attend/index",
+    "pages/sponsor/index",
+    "pages/friend/index",
+    "pages/empty/index",
+    "pages/info/index",
+    "pages/answer1/index",
+    "pages/answer2/index",
+    "pages/question1/index",
+    "pages/answer3/index",
+    "pages/record/index",
+    "pages/challenge/index",
+    "pages/rank/index",
+    "pages/rule/index",
+    "pages/benchmark/index",
+    "pages/generate/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#07c160",
+    "navigationBarTitleText": "考试助手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "icons/home81x81.png",
+        "iconPath": "icons/home81x81-2.png",
+        "pagePath": "pages/activity/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "icons/some81x81.png",
+        "iconPath": "icons/some81x81-2.png",
+        "pagePath": "pages/blackboard/index",
+        "text": "科普"
+      },
+      {
+        "selectedIconPath": "icons/time81x81.png",
+        "iconPath": "icons/time81x81-2.png",
+        "pagePath": "pages/activity/index",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "icons/edit81x81.png",
+        "iconPath": "icons/edit81x81-2.png",
+        "pagePath": "pages/info/index",
+        "text": "关于"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

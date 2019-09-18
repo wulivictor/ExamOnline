@@ -1,0 +1,14 @@
+<view class="page-answer">
+    <view class="title">您的答题情况如下所示，其中黄色标记为错误答题，绿色标记为正确答题</view>
+    <view data-idx="0" bindtap="viewRight" class="{{users[0] == answers[0] ? 'right' : 'wrong'}}">{{objects[0]}}</view>
+    <view data-idx="1" bindtap="viewRight" class="{{users[1] == answers[1] ? 'right' : 'wrong'}}">{{objects[1]}}</view>
+    <view data-idx="2" bindtap="viewRight" class="{{users[2] == answers[2] ? 'right' : 'wrong'}}">{{objects[2]}}</view>
+    <view data-idx="3" bindtap="viewRight" class="{{users[3] == answers[3] ? 'right' : 'wrong'}}">{{objects[3]}}</view>
+    <view data-idx="4" bindtap="viewRight" class="{{users[4] == answers[4] ? 'right' : 'wrong'}}">{{objects[4]}}</view>
+
+    <view data-idx="5" bindtap="viewRight" class="{{users[5] == answers[5] ? 'right' : 'wrong'}}">{{objects[5]}}</view>
+    <view data-idx="6" bindtap="viewRight" class="{{users[6] == answers[6] ? 'right' : 'wrong'}}">{{objects[6]}}</view>
+    <view data-idx="7" bindtap="viewRight" class="{{users[7] == answers[7] ? 'right' : 'wrong'}}">{{objects[7]}}</view>
+    <view data-idx="8" bindtap="viewRight" class="{{users[8] == answers[8] ? 'right' : 'wrong'}}">{{objects[8]}}</view>
+    <view data-idx="9" bindtap="viewRight" class="{{users[9] == answers[9] ? 'right' : 'wrong'}}">{{objects[9]}}</view>
+</view>

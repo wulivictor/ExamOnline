@@ -1,0 +1,28 @@
+.page-wrapper{
+    width: 100%;
+    text-align: center;
+}
+.page-wrapper .wechat{
+    padding-top: 10px;
+}
+.page-wrapper .title{
+    font-size: 18px;
+    color:#000;
+    height:50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.page-wrapper .desc{
+    font-size: 16px;
+    color: #000;
+    height: 100px;
+}
+.button-wrapper{
+    width: 100%;
+}
+.button-wrapper button{
+    width:90%;
+    margin:0 auto;
+
+}

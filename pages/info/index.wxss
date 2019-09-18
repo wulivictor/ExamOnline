@@ -1,0 +1,62 @@
+.page-info{
+    width: 98%;
+    margin:0 auto;
+    height: -webkit-fill-available;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 2px;
+}
+.page-info .header{
+    background: #fff;
+    height: 150px;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-info .header .avatar{
+    width: 75px;
+    padding-left: 10px;
+}
+.page-info .header .avatar .avatarimage{
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+.page-info .header .nickname{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.page-info .menu{
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    background: #fff;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    background-image: url(http://file.xiaomutong.com.cn/arraw20190727.png);
+    background-repeat:no-repeat;
+    background-position:95% center;
+}
+.page-info .menu .icon{
+    width: 32px;
+    height: 32px;
+}
+.page-info .menu .title{
+    padding-left: 10px;
+}
+
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-info .adContainer {
+    position: absolute;
+    bottom: 0;   
+    margin-top: 5px;
+    width: 100%;
+}

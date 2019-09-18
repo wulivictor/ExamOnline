@@ -1,0 +1,12 @@
+<view class="page-wrapper">
+  <view class="home" bindtap="goHome">首页</view>
+  <view class="share" bindtap="goShare"><button open-type="share">分享</button></view>
+  <view class="title">{{name}}属于可回收物</view>
+  <view class="desc">是指适宜回收和可循环再利用的废弃物。主要包括废玻璃、废金属、废塑料、废织物等。</view>
+  <view class='imgList-li' wx:for='{{imgArr}}'>
+    <image class='paycode' src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+  </view>
+  <view class="adContainer">
+    <ad unit-id="adunit-2f4b14df029312bf"></ad>
+  </view>  
+</view>

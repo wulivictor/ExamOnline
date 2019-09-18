@@ -1,0 +1,39 @@
+.page-wrapper{
+    background-color: #f8f8f8;
+    padding: 10rpx;
+    height: -webkit-fill-available;
+  }
+.avatar-wrapper{
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+image.avatar{
+    width: 155px;
+    height: 155px;
+}
+.item{
+    border-bottom: 1px solid #f8f8f8;
+    background-color:#fff;
+    padding-left: 50px;
+}
+.nickname{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.gender{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.country{
+    height: 100px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.button-wrapper{
+    margin-top: 10px;
+}

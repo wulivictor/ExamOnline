@@ -1,0 +1,46 @@
+.page-wrapper{
+    text-align:center;
+    width: 100%;
+    background-color: #f8f8f8;
+    height: -webkit-fill-available;
+}
+.input-wrapper{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 50px;
+    line-height: 50px;
+    line-height: middle;
+    background-color: #fff;
+}
+.type-wrapper{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 50px;
+    line-height: 50px;
+    line-height: middle;
+    background-color: #fff;
+}
+.btn-area{
+    margin: 15rpx 1rpx;
+}
+input{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #585858;
+}
+.picker{
+    color: #585858;
+}
+
+.content{
+    border:1px solid#07c160;
+    height: 250px;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}

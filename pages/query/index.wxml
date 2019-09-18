@@ -1,0 +1,31 @@
+<view class="page-wrapper">
+    <view class="action-cycle-rule">
+        <button type="primary" bindtap="bindRule">规则</button>
+    </view>   
+    <view class="action-cycle-challenge">
+        <button type="primary" bindtap="bindChallenge">挑战</button>
+    </view>   
+    <view class="action-cycle-rank">
+        <button type="primary" bindtap="bindRank">排名</button>
+    </view>            
+    <view class="input-wrapper">
+        <input placeholder="请输入要分类的物品" value="{{inputValue}}" bindinput="bindKeyInput" confirm-type="search" bindconfirm="bindButtonTap" bindblur="bindButtonTap"/>
+        <view class="icon"><icon type="search" size="20"/></view>
+    </view>
+    <view class="content">
+        <block wx:for="{{products}}" wx:for-index="idx" wx:for-item="itemName">
+            <view class="item" bindtap="toProductPage" data-id="{{itemName.id}}" data-name="{{itemName.name}}" data-type="{{itemName.type}}"> {{itemName.name}} </view>
+        </block>
+    </view>
+    <view class="seperate" wx:if="{{products.length == 0}}">
+        热搜词汇：
+    </view>
+    <view class="keywords" wx:if="{{products.length == 0}}">
+        <block wx:for="{{logs}}" wx:for-index="idx" wx:for-item="itemName">
+            <button class="tag" type="default" size="mini"  bindtap="hot" data-type="{{itemName.type}}">{{itemName.name}}</button>
+        </block>
+    </view>
+    
+
+</view>
+

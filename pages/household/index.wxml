@@ -1,0 +1,12 @@
+<view class="page-wrapper">
+  <view class="home" bindtap="goHome">首页</view>
+  <view class="share" bindtap="goShare"><button open-type="share">分享</button></view>
+  <view class="title">{{name}}属于湿垃圾</view>
+  <view class="desc">是指易腐的生物质废弃物。主要包括剩菜剩饭、瓜皮果核、花卉绿植、肉类碎骨、过期食品、餐厨垃圾等。</view>
+  <view class='imgList-li' wx:for='{{imgArr}}'>
+    <image class='paycode' src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+  </view>
+  <view class="adContainer">
+  <ad unit-id="adunit-2f4b14df029312bf"></ad>
+  </view>  
+</view>

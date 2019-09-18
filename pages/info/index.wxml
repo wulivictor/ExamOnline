@@ -1,0 +1,19 @@
+<view class="page-info">
+    <view class="header">
+        <view class="avatar"><image class="avatarimage" style="background-color: #eeeeee;" mode="aspectFill" src="{{userInfo.avatarUrl}}"></image></view>
+        <view class="nickname">{{nickName}}</view>
+    </view>
+    <view class="menu" bindtap="bindMakeFriend" >
+    <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/message20190727.png"></image>
+    <text class="title">微信联系</text>
+    </view>
+    <view class="menu" bindtap="bindGiveHongbao" >
+    <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/money20190727.png"></image>
+    <text class="title">赞助打赏</text>
+    </view>    
+    <view class="adContainer">
+    <ad unit-id="adunit-0850aa57039b7b67"></ad>
+    </view>
+    
+
+</view>

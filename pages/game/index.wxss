@@ -1,0 +1,12 @@
+.page-wrapper{
+  width: 100%;
+  height: -webkit-fill-available;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.page-wrapper .objects{
+  height: 200px;
+}
+.page-wrapper .action{
+  margin-top: 5px;
+}

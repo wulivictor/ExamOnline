@@ -1,0 +1,52 @@
+.page-wrapper{
+  width: 100%;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 10rpx;
+  height: -webkit-fill-available;
+}
+.page-wrapper .question{
+  margin-top: 2px;
+  background-color: #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+.page-wrapper .question .sortcode{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.page-wrapper .question .product{
+  border-bottom: 1px solid #fff;
+  padding-top: 5px;
+}
+.page-wrapper .question .product image{
+  width: 200px; 
+  height: 200px; 
+  background-color: #eeeeee;
+}
+.page-wrapper .question .options{
+  padding-top: 10px;
+}
+.page-wrapper .question .options .optionimage{
+  display: inline-block;
+}
+.page-wrapper .question .options image{
+  width: 80px; 
+  height: 80px; 
+  background-color: #eeeeee;
+}
+.page-wrapper .question .actons{
+padding: 2px 0 5px;
+}
+.page-wrapper .question .actons radio{
+  width: 75px; 
+}
+.page-wrapper .btn-area{
+  padding-top: 25px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+.page-wrapper .btn-area button{
+  width: 100%;
+}

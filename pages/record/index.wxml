@@ -1,0 +1,8 @@
+<view class="page-record">
+    <view class="btn-area">
+        <button type="primary" bind:touchstart='startRecord' bind:touchend='stopRecord'>开始录音</button>
+    </view>
+    <view class="btn-area">
+        <button type="primary" bind:touchstart='playVoice' bind:touchend='stopVoice'>播放录音</button>
+    </view>
+</view>

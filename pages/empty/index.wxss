@@ -1,0 +1,32 @@
+.page-wrapper{
+    width: 100%;
+    height: -webkit-fill-available;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.page-wrapper .tip{
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: left;
+    width: 90%;
+    
+}
+.page-wrapper .action{
+  margin-top: 50px;
+}
+.page-wrapper .action button{
+  background-color: #CBF2F0;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  vertical-align: middle;
+  border-radius: 75px;
+  color: #000;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-wrapper .adContainer {
+  margin-top: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

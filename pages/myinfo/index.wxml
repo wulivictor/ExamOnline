@@ -1,0 +1,17 @@
+<view class="page-wrapper">
+    <view class="avatar-wrapper">
+        <image class="avatar" src="{{userInfo.avatarUrl}}" />
+    </view>
+    <view class="item nickname">
+         <label>昵称：</label>{{userInfo.nickName}}
+    </view>
+    <view class="item gender">
+        <label>性别：</label>{{userInfo.gender == 1 ? "男" : "女"}}
+    </view>
+    <view class="item country">
+        <label>地区：</label>{{userInfo.country}}
+    </view>
+    <view class="button-wrapper">
+        <button class="button" type="primary" bindtap="goHome">返回</button>
+    </view>
+</view>

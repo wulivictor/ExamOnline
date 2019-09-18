@@ -1,0 +1,14 @@
+<view class="page-wrapper">
+    <view class="wechat">
+        <image style="width: 200px; height: 200px; border-radius: 100px;background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+    </view>
+    <view class="title">
+        <text>微信授权页面</text>
+    </view>
+    <view class="desc">
+     <text>此页面是微信授权页面，点击下方按钮弹出授权</text>
+    </view>
+    <view class="button-wrapper">
+        <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+    </view>
+</view>

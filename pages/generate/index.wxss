@@ -1,0 +1,17 @@
+.page-generate{
+    text-align: center;
+    padding: 5px;
+}
+.button-generate{
+    margin: 5px;
+}
+.button-save{
+    margin: 5px;
+}
+.poste_content{
+    margin: 5px;
+    border: 1px solid #179B16;
+}
+.button-share{
+    margin: 5px;
+}

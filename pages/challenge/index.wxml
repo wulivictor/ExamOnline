@@ -1,0 +1,27 @@
+<view class="page-challenge">
+    <view class="product">{{idx+1}}/{{total}}，{{product['name']}}属于哪种垃圾？</view>
+    <view class="producttype">
+        <view class="typeicon" data-type="1" bindtap="bindSelect">
+        <image style="" mode="aspectFit" src="http://file.xiaomutong.com.cn/typeicon/01.jpg"></image> 
+        </view>
+        <view class="typeicon" data-type="2" bindtap="bindSelect">
+        <image style="" mode="aspectFit" src="http://file.xiaomutong.com.cn/typeicon/02.jpg"></image> 
+        </view>
+        <view class="typeicon" data-type="3" bindtap="bindSelect">
+        <image style="" mode="aspectFit" src="http://file.xiaomutong.com.cn/typeicon/03.jpg"></image> 
+        </view>
+        <view class="typeicon" data-type="4" bindtap="bindSelect">
+        <image style="" mode="aspectFit" src="http://file.xiaomutong.com.cn/typeicon/04.jpg"></image> 
+        </view>
+    </view>
+    <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+    <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+        <block wx:for="{{products}}" wx:for-index="idx" wx:for-item="product">
+            <view class="someproduct">
+                <view class="image"><image style="width:32px;height:32px; background-color: #eeeeee;" mode="scaleToFill" src="{{'https://www.xiaomutong.com.cn/public/question/'+product.image}}"></image></view>
+                <view class="title">{{product.name}}-{{product.typename}}</view>
+            </view>       
+        </block>
+    </view>
+
+</view>

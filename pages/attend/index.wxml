@@ -1,0 +1,14 @@
+<view class="page-wrapper">
+    <view class="btn">
+        <button type="primary" bindtap="bindCustom" open-type="contact">联系客服</button>
+    </view>
+    <view class="btn">
+        <button type="warn" bindtap="bindShare" open-type="share">转发好友</button>
+    </view>
+    <view class="btn">
+        <button class="sponsor" style="background-color: #F5A9A9;" type="primary" bindtap="bindSponsor">赞助打赏</button>
+    </view>
+    <view class="btn">
+        <button type="primary" style="background-color: #F5DA81" bindtap="bindMakeFriend">添加好友</button>
+    </view>
+</view>

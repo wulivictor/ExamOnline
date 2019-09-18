@@ -1,0 +1,26 @@
+<view class="page-rule">
+    <view class="title">
+    <text>垃圾分类挑战活动规则如下：</text>
+    </view>
+    <view class="content">
+        <view class="item">
+        <text>1、每次挑战通关为10题，通关成功得10分</text>
+        </view>
+        <view class="item">
+        <text>2、每次挑战，答题失败，挑战即结束</text>
+        </view>
+        <view class="item">
+        <text>3、平台以累计得分作为排名依据</text>
+        </view>
+        <view class="item">
+        <text>4、排名当个自然月有效</text>
+        </view>
+        <view class="item">
+        <text>5、每天挑战次数不受限制</text>
+        </view>
+    </view>
+    <view class="adContainer">
+    <ad unit-id="adunit-f5f1e1614096842f"></ad>
+    </view>
+</view>
+
