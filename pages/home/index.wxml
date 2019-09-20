@@ -1,16 +1,14 @@
-<view class="page-wrapper">
-    <view class="input-wrapper">
-    <input class="name" bindinput="bindKeyInput" value="{{name}}" focus="{{focus}}" placeholder="物品名称"/>
+<view class="page-home">
+  <view class="title">当前共收录{{exams.length}}类从业资格考试</view>
+  <view class="home">
+        <block wx:for="{{exams}}" wx:for-index="idx" wx:for-item="exam">
+            <view class="brand" bindtap="toPhonePage" data-id="{{exam.id}}" data-name="{{brand.name}}">
+                <view class="name">{{exam.name}}</view>
+                <view class="arraw">></view>
+            </view>       
+        </block>
     </view>
-    <view class="type-wrapper">
-        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-            <view class="picker">
-            {{array[index]}}
-            </view>
-        </picker>
-    </view>
-    <view class="btn-area">
-        <button type="primary" bindtap="bindButtonTap">确认提交</button>
+    <view class="adContainer">
+    <ad unit-id="adunit-0e9bd91bf691b6ba"></ad>
     </view>
 </view>
-

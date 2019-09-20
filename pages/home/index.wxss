@@ -1,46 +1,54 @@
-.page-wrapper{
-    text-align:center;
+.page-home{
+    width: 98%;
+    height: 100%;
+    margin:0 auto;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 2px;
+}
+.page-home .title{
     width: 100%;
-    background-color: #f8f8f8;
-    height: -webkit-fill-available;
-}
-.input-wrapper{
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 5px;
+    text-align: left;
+    background: #fff;
+    color:#000;
     height: 50px;
-    line-height: 50px;
-    line-height: middle;
-    background-color: #fff;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
-.type-wrapper{
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 5px;
-    height: 50px;
-    line-height: 50px;
-    line-height: middle;
-    background-color: #fff;
+.page-home .home{
+    padding-top: 5px;
 }
-.btn-area{
-    margin: 15rpx 1rpx;
+.page-home .addition{
+    margin-top: 10px;
 }
-input{
-    height: 50px;
-    line-height: 50px;
-    vertical-align: middle;
-    background-color: #fff;
-    color: #585858;
-}
-.picker{
-    color: #585858;
-}
-
-.content{
-    border:1px solid#07c160;
-    height: 250px;
+.page-home .home .brand{
     background-color: #fff;
     text-align: left;
-    padding-left: 10px;
-    padding-right: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+.page-home .home .brand .name{
+    width: 90%;
+    text-align: left;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    padding-left: 5px;
+    display: inline-block;
+}
+.page-home .home .brand .arraw{
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    padding-right: 16px;
+    display: inline-block;
+    color: #B2B2B2;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.adContainer {
+    width: 100%;
+    margin-top: 5px;
 }

@@ -1,59 +1,44 @@
-.page-wrapper{
+.page-question{
     width: 100%;
-    text-align: center;
-    background-color: #f8f8f8;
-    padding: 10rpx;
-    height: -webkit-fill-available;
+    background-color: #f0f0f0;
 }
-.page-wrapper .question{
-    margin-top: 2px;
-    background-color: #E6E6E6;
-    border-bottom: 1px solid #E6E6E6;
-}
-.page-wrapper .question .sortcode{
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-.page-wrapper .question .title{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    border-radius: 5px;
-    background-color: #07c160;
-}
-.page-wrapper .question .product{
-    border-bottom: 1px solid #fff;
-    padding-top: 5px;
-}
-.page-wrapper .question .product image{
-    width: 200px; 
-    height: 200px; 
-    background-color: #eeeeee;
-}
-.page-wrapper .question .options{
+.page-question .questions{
     padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #fff;
 }
-.page-wrapper .question .options .optionimage{
-    display: inline-block;
+.page-question .question-container .question{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding-top:5px;
+    padding-bottom:5px;
 }
-.page-wrapper .question .options image{
-    width: 80px; 
-    height: 80px; 
-    background-color: #eeeeee;
-}
-.page-wrapper .question .actons{
-  padding: 2px 0 5px;
-}
-.page-wrapper .question .actons radio{
-    width: 75px; 
-}
-.page-wrapper .btn-area{
-    padding-top: 25px;
-    width: 90%;
-    margin: 0 auto;
+.page-question .question-container .question .sortcode{
+    padding-left: 10px;
 
 }
-.page-wrapper .btn-area button{
-    width: 100%;
+.page-question .question-container .question .title{
+    padding-left: 10px;
+}
+.page-question .question-container .options{
+    padding-bottom:5px;
+}
+.page-question .question-container .options .radio-group {
+    border-bottom: 1px solid #ddd;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.page-question .question-container .options .radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.page-question .btn-area{
+    margin-top:10px;
+    padding-bottom: 20px;
+    margin-bottom:5px;
 }

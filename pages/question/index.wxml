@@ -1,34 +1,23 @@
-<view class="page-wrapper">
-    <view class="question">
-        <view class="sortcode">{{sortcode}}/10</view>
-        <view class="product">
-            <image style="" src="{{image}}"></image>
+<view class="page-question">
+    <view class="questions">
+    <block wx:for="{{questions}}" wx:key="id" wx:for-index="idx" wx:for-item="question">
+    <view class="question-container">
+        <view class="question">
+            <view class="sortcode">{{idx+1}}，</view>
+            <view class="title">{{question.title}}</view>
         </view>
-        <view class="title">{{objects[idx]}}</view>
         <view class="options">
-            <view class="optionimage" bindtap="bindCheck1">
-                <image style="" src="/icons/icon1.png"></image>
-            </view>
-            <view class="optionimage" bindtap="bindCheck2">
-                <image style="" src="/icons/icon2.png"></image>
-            </view>
-            <view class="optionimage" bindtap="bindCheck3">
-                <image style="" src="/icons/icon3.png"></image>
-            </view>
-            <view class="optionimage" bindtap="bindCheck4">
-                <image style="" src="/icons/icon4.png"></image>
-            </view>
-        </view>
-        <view class="actons">
             <radio-group class="radio-group" bindchange="radioChange">
-            <label class="radio" wx:for="{{items}}">
-                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            <label class="radio" wx:for="{{question.options}}">
+                <radio value="{{item.code}}"/>{{item.code}}，{{item.value}}
             </label>
             </radio-group>
         </view>
     </view>
+    </block>
+    </view>
 
     <view class="btn-area">
-        <button type="primary" bindtap="bindButtonTap">{{buttonText}}</button>
+        <button type="primary" bindtap="bindButtonTap">确认提交</button>
     </view>                                  
 </view>

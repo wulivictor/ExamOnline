@@ -5,50 +5,51 @@ Page({
    * 页面的初始数据
    */
   data: {
-    focus: true,
-    name: "",
-    type: "",
-    array: ['请选择类别','干垃圾', '湿垃圾', '可回收物', '有害垃圾'],
-    objectArray: [
-      {
-        id: 0,
-        name: '请选择类别'
-      },
-      {
-        id: 1,
-        name: '干垃圾'
-      },
-      {
-        id: 2,
-        name: '湿垃圾'
-      },
-      {
-        id: 3,
-        name: '可回收物'
-      },
-      {
-        id: 4,
-        name: '有害垃圾'
-      }
-    ],
-    index: 0
+    exams: []
   },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      index: e.detail.value
-    })
-  }, 
 
-  bindKeyInput: function(e) {
-    this.setData({
-      name: e.detail.value
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.query();
+  },
+  query: function(){
+    let _this = this;
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=exam/getexams', //仅为示例，并非真实的接口地址
+      data: {
+
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data)
+        let data = res.data;
+        _this.setData({
+          exams: data.result
+        });
+      }
+    });
+  },
+  toPhonePage: function(e){
+    console.log(e.currentTarget.dataset.id);
+    let id = e.currentTarget.dataset.id;
+    let url = '/pages/question/index?id='+id;
+    wx.navigateTo({
+      url: url
+    })
+  },
+  toAttendPage: function(e){
+    console.log(e.currentTarget.dataset.id);
+    let id = e.currentTarget.dataset.id;
+    let title = e.currentTarget.dataset.title;
+    let url;
+    url = '/pages/question/index?id='+id +'&title=' +title;
+    wx.navigateTo({
+      url: url
+    })
 
   },
 
@@ -63,7 +64,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.query();
   },
 
   /**
@@ -99,62 +100,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  bindButtonTap: function() {
-    console.log(this.data);
-    var name = this.data.name;
-    var type = this.data.type;
-    var array = this.data.array;
-    var index = this.data.index;
-    type = array[index];
-    if(name == ''){
-      wx.showToast({
-        title: '请先输入',
-        icon: 'success',
-        duration: 2000
-      })
-      return;
-    }
-    if(index == 0){
-      wx.showToast({
-        title: '请先选择',
-        icon: 'success',
-        duration: 2000
-      })
-      return;
-    }
-    wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=site/addproduct&name='+ name +'&type='+type,
-      method: 'post',
-      data: {
-        name: name,
-        type: type
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success (res) {
-        console.log(res.data)
-        wx.showToast({
-          title: '提交成功',
-          icon: 'success',
-          duration: 2000
-        })
-        
-        // wx.showModal({
-        //   showCancel: false,
-        //   title: '温馨提醒',
-        //   content: '谢谢您提交，小编会在24小时之内审核',
-        //   success (res) {
-        //     if (res.confirm) {
-
-        //     } else if (res.cancel) {
-
-        //     }
-        //   }
-        // })
- 
-      }
-    })
   }
 })

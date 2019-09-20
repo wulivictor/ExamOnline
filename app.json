@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/home/index",    
     "pages/activity/index",
     "pages/query/index",
     "pages/blackboard/index",
     "pages/game/index",
-    "pages/home/index",
     "pages/myinfo/index",
     "pages/product/index",
     "pages/question/index",
@@ -48,7 +48,7 @@
       {
         "selectedIconPath": "icons/home81x81.png",
         "iconPath": "icons/home81x81-2.png",
-        "pagePath": "pages/activity/index",
+        "pagePath": "pages/home/index",
         "text": "首页"
       },
       {
