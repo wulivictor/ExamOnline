@@ -28,22 +28,30 @@
     font-size: 18px;
     padding-left: 10px;
 }
-.page-info .menu{
+.page-info .menus{
+    margin-top: 10px;
+}
+.page-info .menus .menu{
     display: flex;
     flex-direction: box;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1px;
     padding-left: 10px;
     text-align: left;
     background: #fff;
-    height: 75px;
-    line-height: 75px;
+    height: 50px;
+    line-height: 50px;
     vertical-align: middle;
-    background-image: url(http://file.xiaomutong.com.cn/arraw20190727.png);
-    background-repeat:no-repeat;
-    background-position:95% center;
+}
+.page-info .menu .left{
+    width: 90%;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 .page-info .menu .icon{
     width: 32px;
@@ -52,11 +60,11 @@
 .page-info .menu .title{
     padding-left: 10px;
 }
-
-/* 外层组件的宽度可设置成100%或具体数值 */
-.page-info .adContainer {
-    position: absolute;
-    bottom: 0;   
-    margin-top: 5px;
-    width: 100%;
+.page-info .menu .arraw{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-right: 16px;
+    display: inline-block;
+    color: #B2B2B2;
 }

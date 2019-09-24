@@ -22,15 +22,31 @@ Page({
     this.setData({
       userInfo: app.globalData.userInfo
     })
-
     let _this = this;
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=site/getconf',
+      data: {
+
+      },
+      success (res) {
+        console.log(res.data);
+        if(res.data){
+          _this.setData({
+            showMenu: res.data.showMenu
+          })
+        }
+      },
+      fail (err){
+        console.log(err);
+      }
+    })
     wx.login({
       success (res) {
         console.log(res);
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'https://www.xiaomutong.com.cn/web/index.php?r=wechat/getinfo2',
+            url: 'https://www.xiaomutong.com.cn/web/index.php?r=wechat/getinfo3',
             method: 'post',
             data: {
               code: res.code
@@ -54,7 +70,7 @@ Page({
           console.log('登录失败！' + res.errMsg)
         }
       }
-    })    
+    })  
   },
   Getuserinfobyopenid: function(openid){
     let _this = this;
@@ -83,14 +99,32 @@ Page({
       }
     })
   },
-  bindMakeFriend: function(){
-    let url = '/pages/friend/index';
+  bindMyHuodong: function(){
+    let url = '/pages/activity/index';
     wx.navigateTo({
       url: url
     })
   },
-  bindGiveHongbao: function(){
-    let url = '/pages/sponsor/index';
+  bindgoname: function(){
+    let url = '/pages/name/index';
+    wx.navigateTo({
+      url: url
+    })
+  },
+  bindmyinfo: function(){
+    let url = '/pages/notice/index';
+    wx.navigateTo({
+      url: url
+    })
+  },
+  bindgosend: function(){
+    let url = '/pages/send/index';
+    wx.navigateTo({
+      url: url
+    })
+  },
+  bindgoabout: function(){
+    let url = '/pages/about/index';
     wx.navigateTo({
       url: url
     })

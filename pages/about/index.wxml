@@ -1,0 +1,9 @@
+<view class="page-about">
+    <view class="title">关于我们</view>
+    <view class="desc">考试助手用于在线模拟考试</view>
+    <view class="action-weixin">
+    </view>
+    <view class="adContainer">
+    <ad unit-id="adunit-96eff34f6e3bf97e"></ad>
+    </view>
+</view>

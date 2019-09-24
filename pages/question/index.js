@@ -55,19 +55,7 @@ Page({
         let arrayObject = res.data.result;
 
         arrayObject.forEach(element => {
-          element.options = [{
-            'code':'A',
-            'value':'5'
-          },{
-            'code':'B',
-            'value':'6'
-          },{
-            'code':'C',
-            'value':'7'
-          },{
-            'code':'D',
-            'value':'8'
-          }];
+          element.options = JSON.parse(element.options);
         });
         _this.setData({
           questions: arrayObject
@@ -79,7 +67,11 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    const pages = getCurrentPages();
+    const prevPage = pages[pages.length - 1];
+    console.log('开始输出');
+    console.log(pages);
+    console.log(prevPage);
   },
 
   /**

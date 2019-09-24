@@ -1,7 +1,7 @@
 <view class="page-home">
-  <view class="title">当前共收录{{exams.length}}类从业资格考试</view>
+  <view class="title">题库供收录以下类型考试</view>
   <view class="home">
-        <block wx:for="{{exams}}" wx:for-index="idx" wx:for-item="exam">
+        <block wx:for="{{exams}}" wx:key="*this" wx:for-index="idx" wx:for-item="exam">
             <view class="brand" bindtap="toPhonePage" data-id="{{exam.id}}" data-name="{{brand.name}}">
                 <view class="name">{{exam.name}}</view>
                 <view class="arraw">></view>

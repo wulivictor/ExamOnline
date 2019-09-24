@@ -52,18 +52,6 @@
         "text": "首页"
       },
       {
-        "selectedIconPath": "icons/some81x81.png",
-        "iconPath": "icons/some81x81-2.png",
-        "pagePath": "pages/blackboard/index",
-        "text": "科普"
-      },
-      {
-        "selectedIconPath": "icons/time81x81.png",
-        "iconPath": "icons/time81x81-2.png",
-        "pagePath": "pages/activity/index",
-        "text": "发现"
-      },
-      {
         "selectedIconPath": "icons/edit81x81.png",
         "iconPath": "icons/edit81x81-2.png",
         "pagePath": "pages/info/index",
