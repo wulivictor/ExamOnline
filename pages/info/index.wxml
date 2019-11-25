@@ -4,13 +4,6 @@
         <view class="nickname">{{userInfo.nickName}}</view>
     </view>
     <view class="menus">
-        <view class="menu" bindtap="bindgoname" wx:if="{{showMenu}}">
-            <view class="left">
-            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20190918/edit.png"></image>
-            <text class="title">补充信息</text>
-            </view>
-            <view class="arraw">></view>
-        </view>  
         
         <view class="menu" bindtap="bindgoabout" >
             <view class="left">
