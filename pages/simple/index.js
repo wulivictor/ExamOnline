@@ -5,14 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    idx: 1,
+    options: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // let arr = this.generate();
+    let arr = [1,2,3,4,5,6,7,8,9,10]
+    let idx = this.data.idx;
+    this.getQuestion(arr[idx]);
+    this.getOptions(arr[idx]);
   },
 
   /**
@@ -62,5 +67,52 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onNextTap: function(){
+    let idx = this.data.idx;
+    idx++;
+    this.setData({
+      idx
+    })
+  },
+  getQuestion: function(id){
+    let _this = this;
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=question/getquestionbyid',
+      method: 'post',
+      data: {
+        id: id
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data);
+        let question = res.data.result;
+        _this.setData({
+          question: question
+        })
+      }
+    });
+  },
+  getOptions: function(id){
+    let _this = this;
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=answer/getanswersbyqid',
+      method: 'post',
+      data: {
+        qid: id
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data);
+        let options = res.data.result;
+        _this.setData({
+          options: options
+        })
+      }
+    });
   }
 })

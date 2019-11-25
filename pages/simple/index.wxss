@@ -1,1 +1,19 @@
-/* pages/simple/index.wxss */
+.page-simple{
+    width: 100%;
+}
+.page-simple .question{
+    padding: 5px;
+}
+.page-simple .question .title{
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 5px 0;
+}
+.page-simple .radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.page-simple .radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}

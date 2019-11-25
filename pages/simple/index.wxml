@@ -1,2 +1,17 @@
-<!--pages/simple/index.wxml-->
-<text>pages/simple/index.wxml</text>
+<view class="page-simple">
+    <view class="question">
+        <view class="title">{{idx}}、{{question.title}}</view>
+        <view class="options">
+            <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{options}}" wx:key="code">
+                <radio value="{{item.code}}"/>{{item.code}}，{{item.value}}
+            </label>
+            </radio-group>
+        </view>
+    </view>
+    <view class="actions">
+        <button class="btn" type="primary" bindtap="onNextTap">
+            下一个
+        </button>
+    </view>
+</view>

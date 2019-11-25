@@ -31,7 +31,7 @@
     border-radius: 5px;
 }
 .page-home .home .brand .name{
-    width: 90%;
+    width: 85%;
     text-align: left;
     height: 75px;
     line-height: 75px;

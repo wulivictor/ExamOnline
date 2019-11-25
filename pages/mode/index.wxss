@@ -1,1 +1,14 @@
-/* pages/mode/index.wxss */
+.page-mode{
+    width: 100%;
+}
+.page-mode .modes{
+    display: flex;
+    justify-content: center;
+}
+.page-mode .modes button{
+    margin: 5px;
+    width: 50%;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+}
