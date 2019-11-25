@@ -33,7 +33,7 @@ Page({
       }
     });
   },
-  toPhonePage: function(e){
+  toQuestionPage: function(e){
     console.log(e.currentTarget.dataset.id);
     let id = e.currentTarget.dataset.id;
     let url = '/pages/question/index?id='+id;
@@ -41,6 +41,12 @@ Page({
       url: url
     })
   },
+  toModePage: function(){
+    let url = '/pages/mode/index';
+    wx.navigateTo({
+      url: url
+    })
+  },  
   toAttendPage: function(e){
     console.log(e.currentTarget.dataset.id);
     let id = e.currentTarget.dataset.id;

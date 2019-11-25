@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/home/index",    
+    "pages/home/index",
     "pages/activity/index",
     "pages/query/index",
     "pages/blackboard/index",
@@ -35,7 +35,9 @@
     "pages/rank/index",
     "pages/rule/index",
     "pages/benchmark/index",
-    "pages/generate/index"
+    "pages/generate/index",
+    "pages/mode/index",
+    "pages/simple/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

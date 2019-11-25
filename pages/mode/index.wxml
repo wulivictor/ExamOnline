@@ -1,0 +1,6 @@
+<view class="page-mode">
+    <view class="modes">
+        <button type="primary" bindtap="bindSimpleModeTap">单题模式</button>
+        <button type="primary" bindtap="bindListModeTap">列表模式</button>
+    </view>
+</view>
