@@ -13,11 +13,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // let arr = this.generate();
-    let arr = [11,12,13]
     let idx = this.data.idx;
-    this.getQuestion(arr[idx]);
-    this.getOptions(arr[idx]);
+    this.generate().then(res=>{
+      let arr = res;
+      this.setData({
+        arr
+      }, function() {
+        // this is setData callback
+        this.getQuestion(arr[idx]);
+        this.getOptions(arr[idx]);
+      })
+    });
+
   },
 
   /**
@@ -68,16 +75,26 @@ Page({
   onShareAppMessage: function () {
 
   },
+  generate: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('arr'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  },
   radioChange: function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)
   },  
   onNextTap: function(){
+
+    let arr = this.data.arr;
+    
     let idx = this.data.idx;
     idx++;
     this.setData({
       idx
     })
-    let arr = [11,12,13]
+    
     this.getQuestion(arr[idx]);
     this.getOptions(arr[idx]);    
   },
