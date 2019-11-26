@@ -68,6 +68,9 @@ Page({
   onShareAppMessage: function () {
 
   },
+  radioChange: function(e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
+  },  
   onNextTap: function(){
     let idx = this.data.idx;
     idx++;
@@ -112,8 +115,12 @@ Page({
       success (res) {
         console.log(res.data);
         let options = res.data.result;
+        let format_options = options.map(function(item){
+          // item.checked = 'false';
+          return item;
+        });
         _this.setData({
-          options: options
+          options: format_options
         })
       }
     });
