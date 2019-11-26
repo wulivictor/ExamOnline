@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    idx: 1,
+    idx: 0,
     options: []
   },
 
@@ -14,7 +14,7 @@ Page({
    */
   onLoad: function (options) {
     // let arr = this.generate();
-    let arr = [1,2,3,4,5,6,7,8,9,10]
+    let arr = [11,12,13]
     let idx = this.data.idx;
     this.getQuestion(arr[idx]);
     this.getOptions(arr[idx]);
@@ -74,6 +74,9 @@ Page({
     this.setData({
       idx
     })
+    let arr = [11,12,13]
+    this.getQuestion(arr[idx]);
+    this.getOptions(arr[idx]);    
   },
   getQuestion: function(id){
     let _this = this;
