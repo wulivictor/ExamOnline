@@ -18,19 +18,26 @@ Page({
     });
   },  
   bindSubmitTap: function(){
+    let _this = this;
     wx.showModal({
       showCancel: false,
       title: '温馨提醒',
       content: '您当前得分为：'+ this.data.score,
       success (res) {
         if (res.confirm) {
-
+          _this.bindgolistview()
         } else if (res.cancel) {
 
         }
       }
     })
   },
+  bindgolistview: function(){
+    let url = '/pages/list/index';
+    wx.navigateTo({
+      url: url
+    })
+  },  
   /**
    * 生命周期函数--监听页面加载
    */

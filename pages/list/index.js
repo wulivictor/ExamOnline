@@ -1,25 +1,68 @@
-// pages/list/index.js
+// pages/question/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    idx: 0,
+    score: 0,
+    sortcode: '01'
   },
-
+  radioChange: function(e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value);
+    let score = this.data.score;
+    score += parseInt(e.detail.value);
+    this.setData({
+      score
+    });
+  },  
+  bindgohome: function(){
+    let url = '/pages/home/index';
+    wx.switchTab({
+      url: url
+    })
+  },  
+  bindSubmitTap: function(){
+    this.bindgohome();
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options);
+    this.getQuestions();
   },
-
+  generate: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('arr'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  },
+  generate: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('questions'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  },
+  getQuestions: function(){
+    this.generate().then(res=>{
+      this.setData({
+        questions: res
+      });
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    const pages = getCurrentPages();
+    const prevPage = pages[pages.length - 1];
+    console.log('开始输出');
+    console.log(pages);
+    console.log(prevPage);
   },
 
   /**
@@ -63,4 +106,5 @@ Page({
   onShareAppMessage: function () {
 
   }
+
 })

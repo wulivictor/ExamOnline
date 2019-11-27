@@ -38,7 +38,5 @@
     padding: 10px;
 }
 .page-question .btn-area{
-    margin-top:10px;
-    padding-bottom: 20px;
-    margin-bottom:5px;
+    padding: 10px;
 }
