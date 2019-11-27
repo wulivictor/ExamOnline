@@ -23,9 +23,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 13px;
-    height: 45px;
-    line-height: 45px;
-    vertical-align: middle;
+    min-height: 45px;
 }
 .page-rule .reward{
     height: 100px;
