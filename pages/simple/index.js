@@ -6,6 +6,8 @@ Page({
    */
   data: {
     idx: 0,
+    buttontext: '下一个',
+    score: 0,
     options: []
   },
 
@@ -83,16 +85,41 @@ Page({
     });
   },
   radioChange: function(e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value)
+    console.log('radio发生change事件，携带value值为：', e.detail.value);
+    let score = this.data.score;
+    score += parseInt(e.detail.value);
+    this.setData({
+      score
+    });
   },  
   onNextTap: function(){
-
+    let score = this.data.score;
     let arr = this.data.arr;
-    
+
     let idx = this.data.idx;
+    let buttontext = this.data.buttontext;
     idx++;
+    if(idx==9){
+      buttontext = '提交';
+    }
+    if(idx==10){
+      wx.showModal({
+        showCancel: false,
+        title: '提示',
+        content: '您本次答题分数为'+score,
+        success (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+      return;
+    }
     this.setData({
-      idx
+      idx,
+      buttontext
     })
     
     this.getQuestion(arr[idx]);
