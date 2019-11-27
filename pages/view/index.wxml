@@ -1,0 +1,17 @@
+<view class="page-view">
+    <view class="question">
+        <view class="title">{{idx+1}}、{{question.title}}</view>
+        <view class="options">
+            <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{options}}" wx:key="{{item.id}}">
+                <radio value="{{item.value}}" checked="{{item.checked}}">{{item.code}}，{{item.content}}</radio>
+            </label>
+            </radio-group>
+        </view>
+    </view>
+    <view class="actions">
+        <button class="btn" type="primary" bindtap="onNextTap">
+            {{buttontext}}
+        </button>
+    </view>
+</view>

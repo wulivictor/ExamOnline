@@ -100,23 +100,10 @@ Page({
     let buttontext = this.data.buttontext;
     idx++;
     if(idx==9){
-      buttontext = '提交';
+      buttontext = '返回';
     }
     if(idx==10){
-      let _this = this;
-      wx.showModal({
-        showCancel: false,
-        title: '提示',
-        content: '您本次答题分数为'+score,
-        success (res) {
-          if (res.confirm) {
-            console.log('用户点击确定')
-            _this.bindgoview();
-          } else if (res.cancel) {
-            console.log('用户点击取消')
-          }
-        }
-      })
+      this.bindgohome();
       return;
     }
     this.setData({
@@ -127,12 +114,12 @@ Page({
     this.getQuestion(arr[idx]);
     this.getOptions(arr[idx]);    
   },
-  bindgoview: function(){
-    let url = '/pages/view/index';
-    wx.navigateTo({
+  bindgohome: function(){
+    let url = '/pages/home/index';
+    wx.switchTab({
       url: url
     })
-  },
+  },  
   getQuestion: function(id){
     let _this = this;
     wx.request({
@@ -168,7 +155,7 @@ Page({
         console.log(res.data);
         let options = res.data.result;
         let format_options = options.map(function(item){
-          // item.checked = 'false';
+          item.checked = item.value == 1 ? 'true' : 'false';
           return item;
         });
         _this.setData({

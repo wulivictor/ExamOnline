@@ -1,0 +1,22 @@
+.page-view{
+    width: 100%;
+}
+.page-view .question{
+    padding: 5px;
+}
+.page-view .question .title{
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 10px 0;
+}
+.page-view .radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.page-view .radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+}
+.page-view .actions{
+    padding: 10px;
+}
