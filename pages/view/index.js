@@ -155,9 +155,11 @@ Page({
         console.log(res.data);
         let options = res.data.result;
         let format_options = options.map(function(item){
-          item.checked = item.value == 1 ? 'true' : 'false';
+          item.checked = item.value == 1 ? true : false;
           return item;
         });
+        console.log("格式化");
+        console.log(format_options);
         _this.setData({
           options: format_options
         })
