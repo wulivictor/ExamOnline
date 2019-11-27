@@ -18,6 +18,6 @@
     </view>
 
     <view class="btn-area">
-        <button type="primary" bindtap="bindButtonTap">确认提交</button>
+        <button type="primary" bindtap="bindSubmitTap">确认提交</button>
     </view>                                  
 </view>

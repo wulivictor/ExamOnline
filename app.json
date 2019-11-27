@@ -38,7 +38,8 @@
     "pages/generate/index",
     "pages/mode/index",
     "pages/simple/index",
-    "pages/view/index"
+    "pages/view/index",
+    "pages/list/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

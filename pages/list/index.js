@@ -1,4 +1,4 @@
-// pages/mode/index.js
+// pages/list/index.js
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.generate();
+
   },
 
   /**
@@ -62,33 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  bindSimpleModeTap: function(){
-    let url = '/pages/simple/index';
-    wx.navigateTo({
-      url: url
-    })
-  },
-  bindListModeTap: function(){
-    let url = '/pages/question/index';
-    wx.navigateTo({
-      url: url
-    })
-  },
-  generate: function(){
-    let _this = this;
-    wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=site/generatedata', //仅为示例，并非真实的接口地址
-      data: {
-
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success (res) {
-        console.log(res.data);
-        wx.setStorageSync('arr', res.data.result);
-      }
-    });
   }
 })

@@ -6,23 +6,22 @@ Page({
    */
   data: {
     idx: 0,
+    score: 0,
     sortcode: '01'
   },
   radioChange: function(e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value)
-    let idx = this.data.idx;
-    let users = this.data.users;
-    users[idx]= e.detail.value;
+    console.log('radio发生change事件，携带value值为：', e.detail.value);
+    let score = this.data.score;
+    score += parseInt(e.detail.value);
     this.setData({
-      users: users
-    })
-
-  },
-  bindButtonTap2: function(){
+      score
+    });
+  },  
+  bindSubmitTap: function(){
     wx.showModal({
       showCancel: false,
       title: '温馨提醒',
-      content: '小编正在给您计算分数，请稍后',
+      content: '您当前得分为：'+ this.data.score,
       success (res) {
         if (res.confirm) {
 
@@ -59,6 +58,8 @@ Page({
         });
         _this.setData({
           questions: arrayObject
+        },function(){
+          wx.setStorageSync('questions', arrayObject);
         })
       }
     });
