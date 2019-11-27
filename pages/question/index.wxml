@@ -8,8 +8,8 @@
         </view>
         <view class="options">
             <radio-group class="radio-group" bindchange="radioChange">
-            <label class="radio" wx:for="{{question.options}}" wx:key="code">
-                <radio value="{{item.code}}"/>{{item.code}}，{{item.value}}
+            <label class="radio" wx:for="{{question.options}}" wx:key="item.code">
+                <radio value="{{item.value}}"/>{{item.code}}，{{item.content}}
             </label>
             </radio-group>
         </view>
