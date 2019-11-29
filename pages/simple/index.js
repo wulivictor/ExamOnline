@@ -9,6 +9,7 @@ Page({
     buttontext: '下一个',
     score: 0,
     score_arr:[0,0,0,0,0,0,0,0,0,0],
+    code_arr:[],
     options: []
   },
 
@@ -87,15 +88,22 @@ Page({
   },
   radioChange: function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
+    console.log(e);
     let score_arr = this.data.score_arr;
+    let code_arr = this.data.code_arr;
     let idx = this.data.idx;
     let score = this.data.score;
     score += parseInt(e.detail.value);
-    score_arr[idx] = parseInt(e.detail.value);
+    score_arr[idx] = parseInt(JSON.parse(e.detail.value).value);
+    code_arr[idx] = JSON.parse(e.detail.value).code;
     console.log(score_arr);
+    console.log(code_arr);
+    wx.setStorageSync('score_arr', score_arr);
+    wx.setStorageSync('code_arr', code_arr);
     this.setData({
       score,
-      score_arr
+      score_arr,
+      code_arr
     });
   },  
   onNextTap: function(){

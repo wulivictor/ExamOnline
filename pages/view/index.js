@@ -8,6 +8,8 @@ Page({
     idx: 0,
     buttontext: '下一个',
     score: 0,
+    score_arr: [0,0,0,0,0,0,0,0,0,0],
+    code_arr: ['M','M','M','M','M','M','M','M','M','M'],
     options: []
   },
 
@@ -15,6 +17,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getResult().then(res=>{
+      this.setData({
+        score_arr: res
+      })
+    });
+    this.getCodeResult().then(res=>{
+      this.setData({
+        code_arr: res
+      })
+    });
     let idx = this.data.idx;
     this.generate().then(res=>{
       let arr = res;
@@ -76,6 +88,20 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  getResult: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('score_arr'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  },
+  getCodeResult: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('code_arr'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
   },
   generate: function(){
     return new Promise(function (resolve, reject) {

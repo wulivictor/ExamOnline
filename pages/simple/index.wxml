@@ -1,10 +1,11 @@
+<wxs src="./../tools.wxs" module="JSON" />
 <view class="page-simple">
     <view class="question">
         <view class="title">{{idx+1}}、{{question.title}}</view>
         <view class="options">
             <radio-group class="radio-group" bindchange="radioChange">
             <label class="radio" wx:for="{{options}}" wx:key="{{item.id}}">
-                <radio value="{{item.value}}" checked="{{item.checked}}">{{item.code}}，{{item.content}}</radio>
+                <radio value="{{JSON.stringify(item)}}" checked="{{item.checked}}">{{item.code}}，{{item.content}}</radio>
             </label>
             </radio-group>
         </view>
