@@ -8,6 +8,7 @@ Page({
     idx: 0,
     buttontext: '下一个',
     score: 0,
+    score_arr:[0,0,0,0,0,0,0,0,0,0],
     options: []
   },
 
@@ -86,15 +87,21 @@ Page({
   },
   radioChange: function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
+    let score_arr = this.data.score_arr;
+    let idx = this.data.idx;
     let score = this.data.score;
     score += parseInt(e.detail.value);
+    score_arr[idx] = parseInt(e.detail.value);
+    console.log(score_arr);
     this.setData({
-      score
+      score,
+      score_arr
     });
   },  
   onNextTap: function(){
     let score = this.data.score;
     let arr = this.data.arr;
+    let score_arr = this.data.score_arr;
 
     let idx = this.data.idx;
     let buttontext = this.data.buttontext;
@@ -104,10 +111,11 @@ Page({
     }
     if(idx==10){
       let _this = this;
+      let sum = score_arr.reduce((x,y)=>x+y)
       wx.showModal({
         showCancel: false,
         title: '提示',
-        content: '您本次答题分数为'+score,
+        content: '您本次答题分数为'+sum,
         success (res) {
           if (res.confirm) {
             console.log('用户点击确定')
