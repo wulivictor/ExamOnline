@@ -7,22 +7,42 @@ Page({
   data: {
     idx: 0,
     score: 0,
+    score_arr:[0,0,0,0,0,0,0,0,0,0],
+    code_arr:['M','M','M','M','M','M','M','M','M','M'],
     sortcode: '01'
   },
   radioChange: function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
+    let score_arr = this.data.score_arr;
+    let code_arr = this.data.code_arr;
+    let arr = e.detail.value.split('|');
+    let idx = arr[0];
+    let option = JSON.parse(arr[1]);
+    let question = JSON.parse(arr[2]);
+    
     let score = this.data.score;
     score += parseInt(e.detail.value);
+    score_arr[idx] = parseInt(option.value);
+    code_arr[idx] = option.code;
+    console.log(score_arr);
+    console.log(code_arr);
+    wx.setStorageSync('score_arr', score_arr);
+    wx.setStorageSync('code_arr', code_arr);
     this.setData({
-      score
+      score,
+      score_arr,
+      code_arr
     });
   },  
   bindSubmitTap: function(){
+    let score_arr = this.data.score_arr;
+    let sum = score_arr.reduce((x,y)=>x+y)
+
     let _this = this;
     wx.showModal({
       showCancel: false,
       title: '温馨提醒',
-      content: '您当前得分为：'+ this.data.score,
+      content: '您当前得分为：'+ sum,
       success (res) {
         if (res.confirm) {
           _this.bindgolistview()

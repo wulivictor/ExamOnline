@@ -31,6 +31,17 @@ Page({
    */
   onLoad: function (options) {
     console.log(options);
+    this.getResult().then(res=>{
+      this.setData({
+        score_arr: res
+      })
+    });
+    this.getCodeResult().then(res=>{
+      this.setData({
+        code_arr: res
+      })
+    });
+    
     this.getQuestions();
   },
   generate: function(){
@@ -105,6 +116,20 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  getResult: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('score_arr'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  },
+  getCodeResult: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('code_arr'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  }  
 
 })
