@@ -23,30 +23,13 @@ Page({
       userInfo: app.globalData.userInfo
     })
     let _this = this;
-    wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=site/getconf',
-      data: {
-
-      },
-      success (res) {
-        console.log(res.data);
-        if(res.data){
-          _this.setData({
-            showMenu: res.data.showMenu
-          })
-        }
-      },
-      fail (err){
-        console.log(err);
-      }
-    })
     wx.login({
       success (res) {
         console.log(res);
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'https://www.xiaomutong.com.cn/web/index.php?r=wechat/getinfo3',
+            url: 'https://www.xiaomutong.com.cn/web/index.php?r=wechat/getinfo4',
             method: 'post',
             data: {
               code: res.code
@@ -105,6 +88,12 @@ Page({
       url: url
     })
   },
+  bindMyHistory: function(){
+    let url = '/pages/history/index';
+    wx.navigateTo({
+      url: url
+    })
+  },  
   bindgoname: function(){
     let url = '/pages/name/index';
     wx.navigateTo({

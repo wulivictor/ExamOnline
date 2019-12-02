@@ -28,7 +28,8 @@
     "pages/mode/index",
     "pages/simple/index",
     "pages/view/index",
-    "pages/list/index"
+    "pages/list/index",
+    "pages/history/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
