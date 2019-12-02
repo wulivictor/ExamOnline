@@ -1,1 +1,54 @@
-/* pages/history/index.wxss */
+.page-history{
+    width: 98%;
+    height: 100%;
+    margin:0 auto;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 2px;
+}
+.page-history .title{
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    color:#000;
+    height: 50px;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-history .history{
+    padding-top: 5px;
+}
+.page-history .addition{
+    margin-top: 10px;
+}
+.page-history .history .brand{
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+}
+.page-history .history .brand .name{
+    width: 85%;
+    text-align: left;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    padding-left: 5px;
+    display: inline-block;
+}
+.page-history .history .brand .arraw{
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    padding-right: 16px;
+    display: inline-block;
+    color: #B2B2B2;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.adContainer {
+    width: 100%;
+    margin-top: 5px;
+}

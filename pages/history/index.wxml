@@ -1,2 +1,14 @@
-<!--pages/history/index.wxml-->
-<text>pages/history/index.wxml</text>
+<view class="page-history">
+  <view class="title">您共参与的答题记录如下：</view>
+  <view class="history">
+        <block wx:for="{{items}}" wx:key="*this" wx:for-index="idx" wx:for-item="item">
+            <view class="brand" bindtap="toModePage" data-id="{{item.id}}">
+                <view class="name">{{item.examname}}</view>
+                <view class="arraw">></view>
+            </view>       
+        </block>
+    </view>
+    <view class="adContainer">
+    <ad unit-id="adunit-3aacd77be44efe44"></ad>    
+    </view>
+</view>
