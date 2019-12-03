@@ -1,0 +1,11 @@
+<view class="page-score">
+    <view class="score-area">
+        <view class="title">您本次得分为：</view>
+        <view class="score">{{score}}</view>
+    </view>
+    <view class="btn-area">
+        <button class="btn" type="primary" bindtap="bindgoview">
+            查看答案
+        </button>
+    </view>
+</view>

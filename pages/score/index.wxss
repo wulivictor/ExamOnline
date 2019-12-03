@@ -1,0 +1,27 @@
+.page-score{
+    padding-top: 10px;
+    width: 100%;
+}
+.page-score .score-area{
+    background-color: #f0f0f0;
+    height: 250px;
+}
+.page-score .score-area .title{
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    border-bottom: 1px solid #179B16;
+}
+.page-score .score-area .score{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid #f00;
+}
+.page-score .btn-area{
+    padding: 10px;
+}

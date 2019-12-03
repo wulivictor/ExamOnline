@@ -1,6 +1,7 @@
 .page-list{
     width: 100%;
     background-color: #f0f0f0;
+    margin-bottom: 50px;
 }
 .page-list .lists{
     padding-top: 10px;

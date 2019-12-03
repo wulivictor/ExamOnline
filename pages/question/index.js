@@ -37,7 +37,8 @@ Page({
   bindSubmitTap: function(){
     let score_arr = this.data.score_arr;
     let sum = score_arr.reduce((x,y)=>x+y)
-
+    this.bindgoscore(sum);
+    return;
     let _this = this;
     wx.showModal({
       showCancel: false,
@@ -52,6 +53,12 @@ Page({
       }
     })
   },
+  bindgoscore: function(score){
+    let url = '/pages/score/index?score='+score;
+    wx.navigateTo({
+      url: url
+    })
+  },  
   bindgolistview: function(){
     let url = '/pages/list/index';
     wx.navigateTo({

@@ -120,6 +120,8 @@ Page({
     if(idx==10){
       let _this = this;
       let sum = score_arr.reduce((x,y)=>x+y)
+      this.bindgoscore(sum);
+      return;
       wx.showModal({
         showCancel: false,
         title: '提示',
@@ -142,6 +144,12 @@ Page({
     
     this.getQuestion(arr[idx]);
     this.getOptions(arr[idx]);    
+  },
+  bindgoscore: function(score){
+    let url = '/pages/score/index?score='+score;
+    wx.navigateTo({
+      url: url
+    })
   },
   bindgoview: function(){
     let url = '/pages/view/index';

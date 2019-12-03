@@ -1,6 +1,7 @@
 .page-question{
     width: 100%;
     background-color: #f0f0f0;
+    margin-bottom: 50px;
 }
 .page-question .questions{
     padding-top: 10px;

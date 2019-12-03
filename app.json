@@ -29,7 +29,8 @@
     "pages/simple/index",
     "pages/view/index",
     "pages/list/index",
-    "pages/history/index"
+    "pages/history/index",
+    "pages/score/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
