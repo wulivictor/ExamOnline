@@ -14,6 +14,9 @@ Page({
   onLoad: function (options) {
     console.log(options);
     let code = options.code;
+    this.setData({
+      code
+    });
     this.generate(code);
   },
 
@@ -72,7 +75,8 @@ Page({
     })
   },
   bindListModeTap: function(){
-    let url = '/pages/question/index';
+    let code = this.data.code;
+    let url = '/pages/question/index?code='+code;
     wx.navigateTo({
       url: url
     })

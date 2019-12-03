@@ -63,15 +63,19 @@ Page({
    */
   onLoad: function (options) {
     console.log(options);
-    this.getQuestions();
+    let code = options.code;
+    this.setData({
+      code
+    });
+    this.getQuestions(code);
   },
-  getQuestions: function(){
+  getQuestions: function(code){
     let _this = this;
     wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=question/getquestions',
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=question/getquestionsbycode',
       method: 'post',
       data: {
-  
+        code: code
       },
       header: {
         'content-type': 'application/json' // 默认值
