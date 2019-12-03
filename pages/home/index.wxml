@@ -2,13 +2,13 @@
   <view class="title">题库目前收录以下类型考试</view>
   <view class="home">
         <block wx:for="{{exams}}" wx:key="*this" wx:for-index="idx" wx:for-item="exam">
-            <view class="brand" bindtap="toModePage" data-id="{{exam.id}}" data-name="{{brand.name}}">
+            <view class="brand" bindtap="toModePage" data-id="{{exam.id}}" data-code="{{exam.code}}">
                 <view class="name">{{exam.name}}</view>
                 <view class="arraw">></view>
             </view>       
         </block>
     </view>
     <view class="adContainer">
-    <ad unit-id="adunit-3aacd77be44efe44"></ad>    
+        <ad unit-id="adunit-3aacd77be44efe44"></ad>    
     </view>
 </view>

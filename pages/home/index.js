@@ -42,7 +42,9 @@ Page({
     })
   },
   toModePage: function(){
-    let url = '/pages/mode/index';
+    console.log(e.currentTarget.dataset.code);
+    let code = e.currentTarget.dataset.code;
+    let url = '/pages/mode/index?code='+code;
     wx.navigateTo({
       url: url
     })
