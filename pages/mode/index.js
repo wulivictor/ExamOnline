@@ -77,10 +77,9 @@ Page({
       url: url
     })
   },
-  generate: function(){
-    let _this = this;
+  generate: function(code){
     wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=site/generatedata', //仅为示例，并非真实的接口地址
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=question/generatedata', //仅为示例，并非真实的接口地址
       method: 'post',
       data: {
         code: code

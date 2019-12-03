@@ -41,7 +41,7 @@ Page({
       url: url
     })
   },
-  toModePage: function(){
+  toModePage: function(e){
     console.log(e.currentTarget.dataset.code);
     let code = e.currentTarget.dataset.code;
     let url = '/pages/mode/index?code='+code;
