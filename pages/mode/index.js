@@ -18,6 +18,7 @@ Page({
       code
     });
     this.generate(code);
+    this.getByCode(code);
   },
 
   /**
@@ -80,6 +81,22 @@ Page({
     wx.navigateTo({
       url: url
     })
+  },
+  getByCode: function(code){
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=exam/getbycode', //仅为示例，并非真实的接口地址
+      method: 'post',
+      data: {
+        code: code
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data);
+        wx.setStorageSync('exam', res.data.result);
+      }
+    });
   },
   generate: function(code){
     wx.request({
