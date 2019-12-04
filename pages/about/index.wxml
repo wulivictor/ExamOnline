@@ -1,4 +1,7 @@
 <view class="page-about">
     <view class="title">关于我们</view>
     <view class="desc">从业考试答题助手用于从业人员考试模拟，比如证券从业资格考试、基金从业资格考试等</view>
+    <view class="adContainer">
+    <ad unit-id="adunit-3aacd77be44efe44"></ad>    
+    </view>
 </view>

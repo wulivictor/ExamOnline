@@ -8,7 +8,4 @@
             </view>       
         </block>
     </view>
-    <view class="adContainer">
-        <ad unit-id="adunit-3aacd77be44efe44"></ad>    
-    </view>
 </view>
