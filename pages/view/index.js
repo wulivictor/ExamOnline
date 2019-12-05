@@ -17,6 +17,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getSource().then((res)=>{
+      this.setData({
+        source: res
+      })
+    });
     this.getResult().then(res=>{
       this.setData({
         score_arr: res
@@ -110,6 +115,13 @@ Page({
       console.log('catch',res)
     });
   },
+  getSource: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('source'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  },  
   radioChange: function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
     let score = this.data.score;
@@ -119,6 +131,7 @@ Page({
     });
   },  
   onNextTap: function(){
+    let source = this.data.source;
     let score = this.data.score;
     let arr = this.data.arr;
 
@@ -129,7 +142,16 @@ Page({
       buttontext = '返回';
     }
     if(idx==10){
-      this.bindgohome();
+      switch(source){
+        case 'score':
+            this.bindgohome();
+            break;
+        case 'history':
+            this.bindgoHistory();
+            break;
+        default:
+            console.log('其他异常情况');
+      }
       return;
     }
     this.setData({
@@ -146,6 +168,12 @@ Page({
       url: url
     })
   },  
+  bindgoHistory: function(){
+    let url = '/pages/history/index';
+    wx.redirectTo({
+      url: url
+    })
+  },    
   getQuestion: function(id){
     let _this = this;
     wx.request({

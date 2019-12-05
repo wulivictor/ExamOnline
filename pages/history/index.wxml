@@ -1,8 +1,8 @@
 <view class="page-history">
   <view class="title">您共参与的答题记录如下：</view>
   <view class="history">
-        <block wx:for="{{items}}" wx:key="*this" wx:for-index="idx" wx:for-item="item">
-            <view class="brand" bindtap="toModePage" data-id="{{item.id}}">
+        <block wx:for="{{items}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+            <view class="brand" bindtap="toModePage" data-id="{{item.id}}" data-code="{{item.code}}" data-examname="{{item.examname}}" data-questions="{{item.questions}}" data-answers="{{item.answers}}" data-records="{{item.records}}">
                 <view class="name">{{item.examname}}-{{item.score}}分</view>
                 <view class="arraw">></view>
             </view>       

@@ -12,6 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setStorageSync('source', 'history');
     this.getOpenid().then(res=>{
       console.log('resolve');
       console.log(res);
@@ -84,9 +85,23 @@ Page({
       url: url
     })
   },
-  toModePage: function(){
-    let url = '/pages/mode/index';
-    wx.navigateTo({
+  toModePage: function(e){
+    console.log(e.currentTarget.dataset.code);
+    let code = e.currentTarget.dataset.code;
+    let examname = e.currentTarget.dataset.examname;
+
+    let questions = JSON.parse(e.currentTarget.dataset.questions);
+    let answers = JSON.parse(e.currentTarget.dataset.answers);
+    let records = JSON.parse(e.currentTarget.dataset.records);
+
+    wx.setStorageSync('code', code);
+    wx.setStorageSync('name', examname);
+    wx.setStorageSync('arr', questions);
+    wx.setStorageSync('score_arr', answers);
+    wx.setStorageSync('code_arr', records);
+
+    let url = '/pages/view/index';
+    wx.redirectTo({
       url: url
     })
   },  
