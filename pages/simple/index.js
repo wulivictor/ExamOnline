@@ -9,7 +9,7 @@ Page({
     buttontext: '下一个',
     score: 0,
     score_arr:[0,0,0,0,0,0,0,0,0,0],
-    code_arr:[],
+    code_arr:['M','M','M','M','M','M','M','M','M','M'],
     options: []
   },
 
@@ -110,8 +110,21 @@ Page({
     let score = this.data.score;
     let arr = this.data.arr;
     let score_arr = this.data.score_arr;
+    let code_arr = this.data.code_arr;
 
     let idx = this.data.idx;
+    if(code_arr[idx]=='M'){
+      wx.showActionSheet({
+        itemList: ['A', 'B', 'C'],
+        success (res) {
+          console.log(res.tapIndex)
+        },
+        fail (res) {
+          console.log(res.errMsg)
+        }
+      })
+      return;
+    }
     let buttontext = this.data.buttontext;
     idx++;
     if(idx==9){
