@@ -107,6 +107,7 @@ Page({
     });
   },  
   onNextTap: function(){
+    let _this = this;
     let score = this.data.score;
     let arr = this.data.arr;
     let score_arr = this.data.score_arr;
@@ -115,16 +116,32 @@ Page({
     let idx = this.data.idx;
     if(code_arr[idx]=='M'){
       wx.showActionSheet({
-        itemList: ['A', 'B', 'C'],
+        itemList: ['放弃该题', '容我三思'],
         success (res) {
-          console.log(res.tapIndex)
+          console.log(res.tapIndex);
+          if(res.tapIndex == 1){
+            return;
+          }else{
+            _this.getNewOne();
+          }
         },
         fail (res) {
           console.log(res.errMsg)
         }
       })
-      return;
+    }else{
+      _this.getNewOne();
     }
+       
+  },
+  getNewOne: function(){
+    let score = this.data.score;
+    let arr = this.data.arr;
+    let score_arr = this.data.score_arr;
+    let code_arr = this.data.code_arr;
+
+    let idx = this.data.idx;
+
     let buttontext = this.data.buttontext;
     idx++;
     if(idx==9){
@@ -156,7 +173,7 @@ Page({
     })
     
     this.getQuestion(arr[idx]);
-    this.getOptions(arr[idx]);    
+    this.getOptions(arr[idx]); 
   },
   bindgoscore: function(score){
     let url = '/pages/score/index?score='+score;
