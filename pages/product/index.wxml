@@ -1,7 +1,0 @@
-<view class='page-wrapper'>
-  <view class="name">{{name}}</view>
-  <view class="type">{{type}}</view>
-  <view class="adContainer">
-  <ad unit-id="adunit-2f4b14df029312bf"></ad>
-  </view>
-</view>
