@@ -1,17 +1,17 @@
 <view class="page-rule">
     <view class="title">
-    <text>从业资格考试助手帮助手册：</text>
+    <text>使用说明：</text>
     </view>
     <view class="content">
         <view class="item">
         <text>1、考试模式有两种：单题模式、列表模式</text>
         </view>
         <view class="item">
-        <text>2、每次考试总共有10个题目，每题1分，满分为10分，答完会展示分数和答案</text>
+        <text>2、每次考试总共有10个题目，每题1分，满分为10分</text>
         </view>
     </view>
     <view class="adContainer">
-    <ad unit-id="adunit-f5f1e1614096842f"></ad>
+    <ad unit-id="adunit-2771021667a7c480" ad-type="video" ad-theme="white"></ad>
     </view>
 </view>
 

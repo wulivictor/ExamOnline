@@ -1,9 +1,12 @@
 .page-mode{
     width: 100%;
+    background-color: #f0f0f0;
 }
 .page-mode .modes{
     display: flex;
     justify-content: center;
+    background-color: #fff;
+    height: 250px;
 }
 .page-mode .modes button{
     margin: 5px;
@@ -11,4 +14,11 @@
     height: 75px;
     line-height: 75px;
     vertical-align: middle;
+}
+
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-mode .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
 }

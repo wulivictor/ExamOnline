@@ -18,46 +18,9 @@
     padding-left: 10px;
     width: 97%;
 }
-.page-about .action-weixin{
-    text-align: center;
-    margin-top:15px;
-    margin-bottom:15px;
-    position: fixed;
-    top: 72px;
-    right: 0px;
-}
-.page-about .action-weixin button{
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    vertical-align: middle;
-    border-radius: 70px;
-    background: #000;
-    opacity: 0.5;
-    border: 2px solid #01DFA5;
-}
-.page-about .action-pay{
-    text-align: center;
-    margin-top:15px;
-    margin-bottom:15px;
-    position: fixed;
-    top: 145px;
-    right: 0px;
-}
-.page-about .action-pay button{
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    vertical-align: middle;
-    border-radius: 70px;
-    background: #000;
-    opacity: 0.5;
-    border: 2px solid #07c160;
-}
 /* 外层组件的宽度可设置成100%或具体数值 */
 .adContainer {
     width: 100%;
-    margin-top: 5px;
-    position: absolute;
-    bottom: 0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }

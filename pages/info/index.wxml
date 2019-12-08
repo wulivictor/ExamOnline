@@ -7,7 +7,7 @@
         <view class="menu" bindtap="bindgorule" >
             <view class="left">
             <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20190919/volume.png"></image>
-            <text class="title">使用手册</text>
+            <text class="title">使用说明</text>
             </view>
             <view class="arraw">></view>
         </view>    

@@ -3,4 +3,7 @@
         <button type="primary" bindtap="bindSimpleModeTap">单题模式</button>
         <button type="primary" bindtap="bindListModeTap">列表模式</button>
     </view>
+    <view class="adContainer">
+    <ad unit-id="adunit-3d52319b35700a17" ad-type="video" ad-theme="white"></ad>
+    </view>
 </view>
