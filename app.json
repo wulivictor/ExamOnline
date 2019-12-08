@@ -9,7 +9,6 @@
     "pages/authorize/index",
     "pages/friend/index",
     "pages/info/index",
-    "pages/record/index",
     "pages/rank/index",
     "pages/rule/index",
     "pages/generate/index",
