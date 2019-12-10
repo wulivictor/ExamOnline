@@ -5,6 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    defaultSize: 'default',
+    primarySize: 'default',
+    warnSize: 'default',
+    disabled: false,
+    plain: false,
+    loading: false,
+    name: '',
     items: [
       { name: '0', value: '单题模式', checked: 'true'  },
       { name: '1', value: '列表模式'}
@@ -18,12 +25,30 @@ Page({
     })
 
   },
-
+  goQuestion: function(){
+    let mode = this.data.mode;
+    switch(mode){
+      case '0':
+        this.bindSimpleModeTap();
+        break;
+      case '1':
+        this.bindListModeTap();
+        break;
+      default:
+        console.log('异常');
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     console.log(options);
+    let code = options.code;
+    this.setData({
+      code
+    });
+    this.generate(code);
+    this.getByCode(code);
   },
 
   /**
@@ -74,7 +99,40 @@ Page({
   onShareAppMessage: function () {
 
   },
-  generate: function(code){
+  bindSimpleModeTap: function () {
+    let url = '/pages/simple/index';
+    wx.navigateTo({
+      url: url
+    })
+  },
+  bindListModeTap: function () {
+    let code = this.data.code;
+    let url = '/pages/question/index?code=' + code;
+    wx.navigateTo({
+      url: url
+    })
+  },
+  getByCode: function (code) {
+    let _this = this;
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=exam/getbycode', //仅为示例，并非真实的接口地址
+      method: 'post',
+      data: {
+        code: code
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res.data);
+        wx.setStorageSync('exam', res.data.result);
+        _this.setData({
+          name: res.data.result.name
+        })
+      }
+    });
+  },
+  generate: function (code) {
     wx.request({
       url: 'https://www.xiaomutong.com.cn/web/index.php?r=question/generatedata', //仅为示例，并非真实的接口地址
       method: 'post',
@@ -84,7 +142,7 @@ Page({
       header: {
         'content-type': 'application/json' // 默认值
       },
-      success (res) {
+      success(res) {
         console.log(res.data);
         wx.setStorageSync('arr', res.data.result);
       }

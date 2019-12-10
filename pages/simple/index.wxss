@@ -15,7 +15,7 @@
 .page-simple .radio {
     display: block;
     border-top: 1px solid #ddd;
-    padding: 5px;
+    padding: 10px;
 }
 .page-simple .actions{
     padding: 10px;

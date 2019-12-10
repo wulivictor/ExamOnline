@@ -1,20 +1,20 @@
-.page-mode{
+.page-entry{
     width: 100%;
     background-color: #FFF;
 }
-.page-mode .name{
+.page-entry .name{
     height: 75px;
     line-height: 75px;
     vertical-align: middle;
 }
 
-.page-mode .btn-area{
+.page-entry .btn-area{
     background-color: #f0f0f0;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 /* 外层组件的宽度可设置成100%或具体数值 */
-.page-mode .adContainer {
+.page-entry .adContainer {
     margin-top: 10px;
     padding-bottom: 10px;
     width: 100%;

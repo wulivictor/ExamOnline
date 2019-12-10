@@ -15,7 +15,8 @@
     "pages/view/index",
     "pages/list/index",
     "pages/history/index",
-    "pages/score/index"
+    "pages/score/index",
+    "pages/entry/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

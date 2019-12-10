@@ -10,7 +10,14 @@
             <text class="title">使用说明</text>
             </view>
             <view class="arraw">></view>
-        </view>    
+        </view>  
+        <view class="menu" bindtap="bindgomode" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20191210/setting.png"></image>
+            <text class="title">模式设置</text>
+            </view>
+            <view class="arraw">></view>
+        </view>            
         <view class="menu" bindtap="bindMyHistory" >
             <view class="left">
             <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20190918/edit.png"></image>

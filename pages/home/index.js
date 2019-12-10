@@ -60,10 +60,10 @@ Page({
       url: url
     })
   },
-  toModePage: function(e){
+  toEntryPage: function(e){
     console.log(e.currentTarget.dataset.code);
     let code = e.currentTarget.dataset.code;
-    let url = '/pages/mode/index?code='+code;
+    let url = '/pages/entry/index?code='+code;
     wx.navigateTo({
       url: url
     })
