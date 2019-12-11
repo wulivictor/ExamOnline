@@ -9,7 +9,7 @@
     </view>
     <view class="btn-area">
         <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="goQuestion"> 确定 </button>
+        disabled="{{disabled}}" bindtap="tapAddModel"> 确定 </button>
     </view>
     <view class="adContainer">
         <ad unit-id="adunit-3d52319b35700a17" ad-type="video" ad-theme="white"></ad>

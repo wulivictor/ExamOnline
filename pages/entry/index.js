@@ -49,6 +49,70 @@ Page({
     });
     this.generate(code);
     this.getByCode(code);
+    this.getOpenid();
+  },
+  getOpenid: function(){
+    let _this = this;
+    wx.login({
+      success (res) {
+        console.log(res);
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://www.xiaomutong.com.cn/web/index.php?r=wechat/getinfo4',
+            method: 'post',
+            data: {
+              code: res.code
+            },
+            success (res) {
+              console.log(res.data);
+              if(res.data && res.data.code == 0){
+                let result = JSON.parse(res.data.result);
+                console.log(result);
+                _this.getByOpenid(result.openid);
+                _this.setData({
+                  openid: result.openid
+                })
+              }
+            },
+            fail (err){
+              console.log(err);
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    })  
+  },
+  getByOpenid: function(openid){
+    let _this = this;
+    let items = this.data.items;
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=conf/getbyopenid',
+      method: 'post',
+      data: {
+        openid,
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data);
+        let value = res.data.result.value; 
+        let reformattedArray = items.map(obj =>{ 
+          if(obj.name == value){
+            obj.checked = value == 0 ? 'true' : 'false';
+          }
+          return obj;
+       });
+       console.log(reformattedArray);
+       _this.setData({
+         mode: value,
+         items: reformattedArray
+       })
+      }
+    });
   },
 
   /**
