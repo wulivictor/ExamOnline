@@ -1,0 +1,32 @@
+.page-subjects{
+    width: 100%;
+    background-color: #FFF;
+}
+.page-subjects .name{
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+}
+
+.page-subjects .btn-area{
+    background-color: #f0f0f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-subjects .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}

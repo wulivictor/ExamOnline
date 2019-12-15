@@ -60,6 +60,14 @@ Page({
       url: url
     })
   },
+  toSubjectsPage: function(e){
+    console.log(e.currentTarget.dataset.code);
+    let code = e.currentTarget.dataset.code;
+    let url = '/pages/subjects/index?code='+code;
+    wx.navigateTo({
+      url: url
+    })
+  }, 
   toEntryPage: function(e){
     console.log(e.currentTarget.dataset.code);
     let code = e.currentTarget.dataset.code;

@@ -179,7 +179,7 @@ Page({
   getByCode: function (code) {
     let _this = this;
     wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=exam/getbycode', //仅为示例，并非真实的接口地址
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=subjects/getbycode', //仅为示例，并非真实的接口地址
       method: 'post',
       data: {
         code: code

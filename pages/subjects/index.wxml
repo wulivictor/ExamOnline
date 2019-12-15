@@ -1,0 +1,17 @@
+<view class="page-subjects">
+    <view class="name">请选择考试科目：</view>
+    <view class="subjects">
+        <radio-group class="radio-group" bindchange="radioChange">
+            <radio class="radio" wx:for-items="{{subjects}}" wx:key="code" value="{{item.code}}">
+                <text>{{item.name}}</text>
+            </radio>
+        </radio-group>
+    </view>
+    <view class="btn-area">
+        <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="toEntryPage"> 确定 </button>
+    </view>
+    <view class="adContainer">
+        <ad unit-id="adunit-3d52319b35700a17" ad-type="video" ad-theme="white"></ad>
+    </view>
+</view>
