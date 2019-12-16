@@ -118,8 +118,18 @@ Page({
       success(res) {
         console.log(res.data);
         wx.setStorageSync('subjects', res.data.result);
+        let subjects = res.data.result;
+        let code = _this.data.code;
+        if(subjects.length == 1){
+          subjects.map(function(obj) { 
+            code  = obj['code'];
+            obj.checked = 'true';
+            return obj;
+         });
+        }
         _this.setData({
-          subjects: res.data.result
+          subjects,
+          code
         })
       }
     });

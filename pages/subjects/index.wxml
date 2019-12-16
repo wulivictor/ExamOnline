@@ -2,7 +2,7 @@
     <view class="name">请选择考试科目：</view>
     <view class="subjects">
         <radio-group class="radio-group" bindchange="radioChange">
-            <radio class="radio" wx:for-items="{{subjects}}" wx:key="code" value="{{item.code}}">
+            <radio class="radio" wx:for-items="{{subjects}}" wx:key="code" value="{{item.code}}" checked="{{item.checked}}">
                 <text>{{item.name}}</text>
             </radio>
         </radio-group>
