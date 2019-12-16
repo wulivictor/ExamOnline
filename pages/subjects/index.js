@@ -11,7 +11,9 @@ Page({
       { name: '0', value: '单题模式', checked: 'true' },
       { name: '1', value: '列表模式' }
     ],
-    code: '0101'
+    examcode: '',
+    code: '0000'
+
   },
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
@@ -25,11 +27,11 @@ Page({
    */
   onLoad: function (options) {
     console.log(options);
-    let code = options.code;
+    let examcode = options.code;
     this.setData({
-      code
+      examcode
     });    
-    this.getByCode(code);
+    this.getByCode(examcode);
   },
 
   /**
@@ -82,6 +84,21 @@ Page({
   },
   toEntryPage: function(){
     let code = this.data.code;
+    if(code == '0000'){
+      wx.showModal({
+        showCancel: false,
+        title: '提示',
+        content: '请先选择一个科目',
+        success (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+      return;
+    }
     let url = '/pages/entry/index?code='+code;
     wx.navigateTo({
       url: url
