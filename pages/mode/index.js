@@ -136,21 +136,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  generate: function(code){
-    wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=question/generatedata', //仅为示例，并非真实的接口地址
-      method: 'post',
-      data: {
-        code: code
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success (res) {
-        console.log(res.data);
-        wx.setStorageSync('arr', res.data.result);
-      }
-    });
   }
 })
