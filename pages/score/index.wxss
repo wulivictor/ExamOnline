@@ -1,7 +1,5 @@
 .page-score{
-    padding-top: 10px;
     width: 100%;
-    background-color: #f0f0f0;
 }
 .page-score .score-area{
     background-color: #fff;
@@ -9,8 +7,8 @@
     text-align: center;
 }
 .page-score .score-area .title{
-    background-color: #fff;
-    padding-left: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
     height: 35px;
     line-height: 35px;
     vertical-align: middle;
@@ -19,24 +17,25 @@
 .page-score .score-area .value-area{
     text-align: center;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 200px;
     color: #fff;
+    padding-top: 10px;
 }
 .page-score .score-area .score{
     text-align: center;
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
     vertical-align: middle;
-    width: 50px;
-    border-radius: 25px;
+    width: 30px;
+    border-radius: 15px;
     border: 1px solid #f00;
     background-color: #07c160;
 }
 .page-score .btn-area{
-    background-color: #fff;
     padding: 10px;
+    background-color: #f0f0f0;
 }
 
 /* 外层组件的宽度可设置成100%或具体数值 */
