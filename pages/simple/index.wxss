@@ -1,13 +1,35 @@
 .page-simple{
     width: 100%;
 }
-.page-simple .question{
+.page-simple .sortnumber{
     padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.page-simple .sortnumber .current{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #07c160;
+}
+.page-simple .sortnumber .total{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+.page-simple .question{
+    
 }
 .page-simple .question .title{
     background-color: #f0f0f0;
     width: 100%;
     padding: 10px 0;
+}
+.page-simple .question .option{
+    padding: 5px;
 }
 .page-simple .radio-group {
     border-bottom: 1px solid #ddd;

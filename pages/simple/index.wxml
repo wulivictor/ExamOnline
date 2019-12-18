@@ -1,5 +1,8 @@
 <wxs src="./../tools.wxs" module="JSON" />
 <view class="page-simple">
+    <view class="sortnumber"> 
+    <text class="current">{{idx+1}}</text>/<text class="total">10</text>
+    </view>
     <view class="question">
         <view class="title">{{idx+1}}、{{question.title}}</view>
         <view class="options">
