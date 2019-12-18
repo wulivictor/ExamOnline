@@ -13,7 +13,7 @@
             </radio-group>
         </view>
     </view>
-    <view class="actions">
+    <view class="btn-area">
         <button class="btn" type="primary" bindtap="onNextTap">
             {{buttontext}}
         </button>

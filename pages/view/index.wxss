@@ -17,6 +17,7 @@
     border-top: 1px solid #ddd;
     padding: 10px;
 }
-.page-view .actions{
+.page-view .btn-area{
     padding: 10px;
+    background-color: #f0f0f0;
 }
