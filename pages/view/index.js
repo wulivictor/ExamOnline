@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    color: '#F00',
     idx: 0,
     buttontext: '下一个',
     score: 0,

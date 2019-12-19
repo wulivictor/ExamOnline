@@ -4,7 +4,17 @@
         <view class="options">
             <radio-group class="radio-group" bindchange="radioChange">
             <label class="radio" wx:for="{{options}}" wx:key="{{item.id}}">
-                <radio style="color:{{score_arr[idx]==0 && code_arr[idx]==item.code ? '#F00' : '#000'}};" disabled="true" value="{{item.value}}" checked="{{item.checked}}">{{item.code}}，{{item.content}}</radio>
+                <block wx:if="{{item.checked}}"> 
+                <view><icon type="success" size="25"/>{{item.code}}，{{item.content}}</view>
+                </block>
+
+                <block wx:elif="{{!item.checked && score_arr[idx]==0 && code_arr[idx]==item.code}}">
+                <view><icon type="cancel" size="25"/>{{item.code}}，{{item.content}}</view>
+                </block>
+
+                <block wx:else>
+                    <radio value="{{item.value}}" checked="{{item.checked}}">{{item.code}}，{{item.content}}</radio>                
+                </block>
             </label>
             </radio-group>
         </view>
