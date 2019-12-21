@@ -2,11 +2,14 @@
     width: 100%;
 }
 .page-simple .sortnumber{
+    background-color: #f0f0f0;
     padding: 5px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    height: 35px;
 }
 .page-simple .sortnumber .current{
     width: 20px;
@@ -26,22 +29,37 @@
     
 }
 .page-simple .question .title{
-    background-color: #f0f0f0;
+    background-color: #fff;
     width: 100%;
     padding: 10px 0;
+    min-height: 65px;
 }
 .page-simple .question .option{
     padding: 5px;
 }
 .page-simple .radio-group {
     border-bottom: 1px solid #ddd;
+    padding: 5px 0;
 }
 .page-simple .radio {
     display: block;
     border-top: 1px solid #ddd;
     padding: 10px;
 }
+.page-simple .radio .option-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 .page-simple .btn-area{
     padding: 10px;
     background-color: #f0f0f0;
+}
+
+radio .wx-radio-input{
+    border-radius:50%;
+    width:18px;
+    height:18px;
 }

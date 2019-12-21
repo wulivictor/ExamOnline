@@ -8,6 +8,7 @@
     background-color: #f0f0f0;
     width: 100%;
     padding: 10px 0;
+    min-height: 65px;
 }
 .page-view .radio-group {
     border-bottom: 1px solid #ddd;
@@ -17,10 +18,18 @@
     border-top: 1px solid #ddd;
     padding: 10px;
 }
+.page-view .radio .option-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 .page-view .btn-area{
     padding: 10px;
     background-color: #f0f0f0;
 }
+
 
 radio .wx-radio-input{
     border-radius:50%;
