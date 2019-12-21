@@ -24,4 +24,8 @@
             {{buttontext}}
         </button>
     </view>
+    <view class="info" wx:if="{{score_arr[idx] == 0}}">
+        <view>正确答案：{{rightCode}}</view>
+        <view>您的选项：{{code_arr[idx]}}</view>
+    </view>
 </view>

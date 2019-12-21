@@ -94,6 +94,12 @@ Page({
       url: url
     })
   },  
+  bindMyStudy: function(){
+    let url = '/pages/study/index';
+    wx.navigateTo({
+      url: url
+    })
+  },    
   bindgoname: function(){
     let url = '/pages/name/index';
     wx.navigateTo({

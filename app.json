@@ -17,7 +17,9 @@
     "pages/history/index",
     "pages/score/index",
     "pages/entry/index",
-    "pages/subjects/index"
+    "pages/subjects/index",
+    "pages/study/index",
+    "pages/detail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

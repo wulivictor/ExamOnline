@@ -124,7 +124,7 @@ Page({
   },
   generate: function(){
     return new Promise(function (resolve, reject) {
-      resolve(wx.getStorageSync('arr'))
+      resolve(wx.getStorageSync('study'))
     }).catch(res=>{
       console.log('catch',res)
     });
@@ -161,30 +161,9 @@ Page({
     let code_arr = this.data.code_arr;
 
     let idx = this.data.idx;
-    if(score_arr[idx] == 0){
-      let openid = this.data.openid;
-      let quid = arr[idx];
+  
+    this.getNewOne();
 
-      this.addStudy(openid, quid);
-    }
-    if(code_arr[idx]=='M'){
-      wx.showActionSheet({
-        itemList: ['放弃该题', '容我三思'],
-        success (res) {
-          console.log(res.tapIndex);
-          if(res.tapIndex == 1){
-            return;
-          }else{
-            _this.getNewOne();
-          }
-        },
-        fail (res) {
-          console.log(res.errMsg)
-        }
-      })
-    }else{
-      _this.getNewOne();
-    }
        
   },
   addStudy: function(openid,quid){
@@ -205,6 +184,7 @@ Page({
     });
   },
   getNewOne: function(){
+    let _this = this;
     let score = this.data.score;
     let arr = this.data.arr;
     let score_arr = this.data.score_arr;
@@ -214,22 +194,19 @@ Page({
 
     let buttontext = this.data.buttontext;
     idx++;
-    if(idx==9){
-      buttontext = '提交';
+    let length = arr.length;
+    if(idx== length-1){
+      buttontext = '完成';
     }
-    if(idx==10){
-      let _this = this;
-      let sum = score_arr.reduce((x,y)=>x+y)
-      this.bindgoscore(sum);
-      return;
+    if(idx==arr.length){
       wx.showModal({
         showCancel: false,
         title: '提示',
-        content: '您本次答题分数为'+sum,
+        content: '本次错题回顾已完成',
         success (res) {
           if (res.confirm) {
             console.log('用户点击确定')
-            _this.bindgoview();
+            _this.bindgoHome();
           } else if (res.cancel) {
             console.log('用户点击取消')
           }
@@ -251,9 +228,9 @@ Page({
       url: url
     })
   },
-  bindgoview: function(){
-    let url = '/pages/view/index';
-    wx.navigateTo({
+  bindgoHome: function(){
+    let url = '/pages/home/index';
+    wx.switchTab({
       url: url
     })
   },
@@ -292,7 +269,7 @@ Page({
         console.log(res.data);
         let options = res.data.result;
         let format_options = options.map(function(item){
-          // item.checked = 'false';
+          item.checked = item.value == 1 ? true : false;
           return item;
         });
         _this.setData({

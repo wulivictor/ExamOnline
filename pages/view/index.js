@@ -11,7 +11,8 @@ Page({
     score: 0,
     score_arr: [0,0,0,0,0,0,0,0,0,0],
     code_arr: ['M','M','M','M','M','M','M','M','M','M'],
-    options: []
+    options: [],
+    rightCode: ''
   },
 
   /**
@@ -207,15 +208,20 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success (res) {
+        let rightCode = _this.data.rightCode;
         console.log(res.data);
         let options = res.data.result;
         let format_options = options.map(function(item){
           item.checked = item.value == 1 ? true : false;
+          if(item.checked){
+            rightCode = item.code;
+          }
           return item;
         });
         console.log("格式化");
         console.log(format_options);
         _this.setData({
+          rightCode,
           options: format_options
         })
       }
