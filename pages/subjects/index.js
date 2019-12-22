@@ -133,6 +133,7 @@ Page({
         let code = _this.data.code;
         if(subjects.length == 1){
           subjects.map(function(obj) { 
+            wx.setStorageSync('subject', obj);
             code  = obj['code'];
             obj.checked = 'true';
             return obj;

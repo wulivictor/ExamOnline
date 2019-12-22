@@ -34,7 +34,7 @@ Page({
       console.log('subject');
       console.log(res);
       this.setData({
-        subject
+        subject: res
       })
     })
 
@@ -204,6 +204,8 @@ Page({
   },
   addStudy: function(openid,quid){
     let subject = this.data.subject;
+    console.log('20191221');
+    console.log(subject);
     let _this = this;
     wx.request({
       url: 'https://www.xiaomutong.com.cn/web/index.php?r=study/add',
