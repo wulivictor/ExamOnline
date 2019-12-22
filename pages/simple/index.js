@@ -30,6 +30,14 @@ Page({
       })
     });
 
+    this.getSubject().then(res=>{
+      console.log('subject');
+      console.log(res);
+      this.setData({
+        subject
+      })
+    })
+
   },
 
   /**
@@ -129,6 +137,13 @@ Page({
       console.log('catch',res)
     });
   },
+  getSubject: function(){
+    return new Promise(function (resolve, reject) {
+      resolve(wx.getStorageSync('subject'))
+    }).catch(res=>{
+      console.log('catch',res)
+    });
+  },
   radioChange: function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
     console.log(e);
@@ -188,13 +203,16 @@ Page({
        
   },
   addStudy: function(openid,quid){
+    let subject = this.data.subject;
     let _this = this;
     wx.request({
       url: 'https://www.xiaomutong.com.cn/web/index.php?r=study/add',
       method: 'post',
       data: {
         openid,
-        quid
+        quid,
+        subjectcode: subject['code'],
+        subjectname: subject['name']
       },
       header: {
         'content-type': 'application/json' // 默认值
