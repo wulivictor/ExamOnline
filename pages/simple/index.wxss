@@ -31,8 +31,11 @@
 .page-simple .question .title{
     background-color: #fff;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     min-height: 65px;
+}
+.page-simple .question .title text{
+    height: 100%;
 }
 .page-simple .question .option{
     padding: 5px;
