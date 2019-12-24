@@ -17,8 +17,12 @@ Page({
   },
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
+    let code = e.detail.value;
     this.setData({
-      code: e.detail.value
+      code
+    })
+    this.getOpenid().then(res=>{
+      this.generate(res,code);
     })
   },
 
@@ -28,9 +32,47 @@ Page({
   onLoad: function (options) {
     console.log(options); 
     this.getByCode();
-    this.generate();
-  },
 
+    
+  },
+  getOpenid: function(){
+    return new Promise(function(resolve, reject){
+      let _this = this;
+      wx.login({
+        success (res) {
+          console.log(res);
+          if (res.code) {
+            //发起网络请求
+            wx.request({
+              url: 'https://www.xiaomutong.com.cn/web/index.php?r=wechat/getinfo4',
+              method: 'post',
+              data: {
+                code: res.code
+              },
+              success (res) {
+                console.log(res.data);
+                if(res.data && res.data.code == 0){
+                  let result = JSON.parse(res.data.result);
+                  console.log(result);
+                  resolve(result.openid);
+                }
+              },
+              fail (err){
+                console.log(err);
+                reject(err);
+              }
+            })
+          } else {
+            console.log('登录失败！' + res.errMsg)
+            reject(res)
+          }
+        }
+      })  
+    }).catch(res=>{
+      console.log('catch',res);
+      reject(res);
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -123,20 +165,21 @@ Page({
       url: url
     })
   },    
-  generate: function () {
+  generate: function (openid,code) {
     let _this = this;
     wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=study/getall', //仅为示例，并非真实的接口地址
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=study/getitems', //仅为示例，并非真实的接口地址
       method: 'post',
       data: {
-        
+          openid,
+          code
       },
       header: {
         'content-type': 'application/json' // 默认值
       },
       success(res) {
         console.log(res.data);
-        let data = res.data.length == 0 ? [] : res.data;
+        let data = res.data.result;
         let items = [];
         data.map(function(item){
           items.push(item.quid)

@@ -55,11 +55,13 @@
     padding: 10px;
 }
 .page-detail .radio .option-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    display: inline;
+}
+.page-detail .radio radio{
+    display: inline;
+}
+.page-detail .radio text{
+    display: inline;
 }
 .page-detail .btn-area{
     padding: 10px;

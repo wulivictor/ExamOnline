@@ -11,8 +11,8 @@
             <radio-group class="radio-group" bindchange="radioChange">
             <label class="radio" wx:for="{{options}}" wx:key="{{item.id}}">
                 <view class="option-content">
-                <radio value="{{JSON.stringify(item)}}" checked="{{item.checked}}"></radio>
-                <text>{{item.code}}，{{item.content}}</text>
+                    <radio value="{{JSON.stringify(item)}}" checked="{{item.checked}}"></radio>
+                    <text>{{item.code}}，{{item.content}}</text>
                 </view>
             </label>
             </radio-group>
