@@ -30,9 +30,14 @@
 }
 .page-simple .question .title{
     background-color: #fff;
-    width: 100%;
+    width: 95%;
     padding: 10px;
     min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 .page-simple .question .title text{
     height: 100%;
@@ -50,11 +55,13 @@
     padding: 10px;
 }
 .page-simple .radio .option-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+
+}
+.page-simple .radio .option-content radio{
+    display: inline;
+}
+.page-simple .radio .option-content .content{
+    display: inline;
 }
 .page-simple .btn-area{
     padding: 10px;

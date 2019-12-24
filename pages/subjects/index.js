@@ -18,7 +18,7 @@ Page({
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value);
     let code = e.detail.value;
-    let subject = getSubjectByCode(code);
+    let subject = this.getSubjectByCode(code);
     wx.setStorageSync('subject', subject);
     this.setData({
       code: e.detail.value
