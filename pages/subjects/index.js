@@ -26,11 +26,13 @@ Page({
   },
   getSubjectByCode(code){
     let subjects = this.data.subjects;
-    return subjects.map((item)=>{
-      if(item.code == 'code'){
-        return item;
+    let subject;
+    subjects.forEach((item)=>{
+      if(item.code == code){
+        subject = item;
       }
     })
+    return subject;
   },
 
   /**

@@ -30,9 +30,17 @@
 }
 .page-detail .question .title{
     background-color: #fff;
-    width: 100%;
-    padding: 10px 0;
+    width: 95%;
+    padding: 10px;
     min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-detail .question .title text{
+    height: 100%;
 }
 .page-detail .question .option{
     padding: 5px;
