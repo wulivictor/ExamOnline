@@ -99,7 +99,7 @@ Page({
       },
       success (res) {
         console.log(res.data);
-        let value = res.data.result.value; 
+        let value = res.data.result.value || '0'; 
         let reformattedArray = items.map(obj =>{ 
           if(obj.name == value){
             obj.checked = value == 0 ? 'true' : 'false';
