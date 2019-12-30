@@ -11,7 +11,6 @@ Page({
       { name: '0', value: '单题模式', checked: 'true' },
       { name: '1', value: '列表模式' }
     ],
-    examcode: '',
     code: '0000'
 
   },
@@ -21,9 +20,6 @@ Page({
     this.setData({
       code
     })
-    this.getOpenid().then(res=>{
-      this.generate(res,code);
-    })
   },
 
   /**
@@ -31,13 +27,16 @@ Page({
    */
   onLoad: function (options) {
     console.log(options); 
-    this.getByCode();
+    this.getOpenid().then(res=>{
+      this.getByOpenid(res);
+    })
+    
 
     
   },
   getOpenid: function(){
+    let _this = this;
     return new Promise(function(resolve, reject){
-      let _this = this;
       wx.login({
         success (res) {
           console.log(res);
@@ -54,6 +53,9 @@ Page({
                 if(res.data && res.data.code == 0){
                   let result = JSON.parse(res.data.result);
                   console.log(result);
+                  _this.setData({
+                    openid: result.openid
+                  })
                   resolve(result.openid);
                 }
               },
@@ -145,6 +147,7 @@ Page({
   },  
   toDetailPage: function(){
     let code = this.data.code;
+    let openid = this.data.openid;
     if(code == '0000'){
       wx.showModal({
         showCancel: false,
@@ -160,41 +163,48 @@ Page({
       })
       return;
     }
-    let url = '/pages/detail/index?code='+code;
-    wx.navigateTo({
-      url: url
+    this.generate(openid,code).then(()=>{
+      let url = '/pages/detail/index';
+      wx.navigateTo({
+        url: url
+      })
     })
+    
   },    
   generate: function (openid,code) {
     let _this = this;
-    wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=study/getitems', //仅为示例，并非真实的接口地址
-      method: 'post',
-      data: {
-          openid,
-          code
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success(res) {
-        console.log(res.data);
-        let data = res.data.result;
-        let items = [];
-        data.map(function(item){
-          items.push(item.quid)
-        });
-        wx.setStorageSync('study', items);
-      }
-    });
+    return new Promise(function(resolve, reject){
+      wx.request({
+        url: 'https://www.xiaomutong.com.cn/web/index.php?r=study/getitems', //仅为示例，并非真实的接口地址
+        method: 'post',
+        data: {
+            openid,
+            code
+        },
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success(res) {
+          console.log(res.data);
+          let data = res.data.result;
+          let items = [];
+          data.map(function(item){
+            items.push(item.quid)
+          });
+          wx.setStorageSync('study', items);
+          resolve();
+        }
+      });
+    })
+    
   },
-  getByCode: function () {
+  getByOpenid: function (openid) {
     let _this = this;
     wx.request({
-      url: 'https://www.xiaomutong.com.cn/web/index.php?r=subjects/getall', //仅为示例，并非真实的接口地址
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=records/getbyopenid', //仅为示例，并非真实的接口地址
       method: 'post',
       data: {
-        
+        openid
       },
       header: {
         'content-type': 'application/json' // 默认值
