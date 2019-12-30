@@ -30,6 +30,7 @@ Page({
         score
       },()=>{
         this.addHistory();
+        this.addRecord();
       })
       
     });
@@ -162,6 +163,26 @@ Page({
       console.log('catch',res);
       reject(res);
     })
+  },
+  addRecord: function(){
+    let openid = this.data.openid;
+    let code = this.data.code;
+    let examname = this.data.examname;
+    wx.request({
+      url: 'https://www.xiaomutong.com.cn/web/index.php?r=records/add',
+      method: 'post',
+      data: {
+        openid,
+        code,
+        examname
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data);
+      }
+    });
   },
   addHistory: function(){
     let openid = this.data.openid;
