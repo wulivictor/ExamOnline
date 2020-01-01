@@ -19,7 +19,8 @@
     "pages/entry/index",
     "pages/subjects/index",
     "pages/study/index",
-    "pages/detail/index"
+    "pages/detail/index",
+    "pages/example/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

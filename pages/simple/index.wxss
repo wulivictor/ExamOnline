@@ -78,6 +78,9 @@
 .page-simple .btn-area button:nth-child(2){
     margin-top: 15px;
 }
+.page-simple .btn-area button:nth-child(3){
+    margin-top: 15px;
+}
 
 radio .wx-radio-input{
     border-radius:50%;

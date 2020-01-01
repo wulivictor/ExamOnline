@@ -336,9 +336,26 @@ Page({
       _this.bindGenerate();
     },1000)
   },
+  onGotUserInfo2: function(e) {
+    let _this = this;
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
+    app.globalData.userInfo = e.detail.userInfo;
+    setTimeout(function(){
+      _this.bindGenerate2();
+    },1000)
+  },  
   bindGenerate: function(){
+    let question = this.data.question;
     wx.navigateTo({
-      url: '/pages/generate/index'
+      url: '/pages/example/index?id='+question.id
+    })
+  },
+  bindGenerate2: function(){
+    let question = this.data.question;
+    wx.navigateTo({
+      url: '/pages/generate/index?id='+question.id
     })
   }
 })
