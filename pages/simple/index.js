@@ -1,4 +1,9 @@
 // pages/simple/index.js
+
+const app = getApp()
+console.log('a00');
+console.log(app.globalData.userInfo);
+
 Page({
 
   /**
@@ -320,5 +325,20 @@ Page({
         })
       }
     });
+  },
+  onGotUserInfo: function(e) {
+    let _this = this;
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
+    app.globalData.userInfo = e.detail.userInfo;
+    setTimeout(function(){
+      _this.bindGenerate();
+    },1000)
+  },
+  bindGenerate: function(){
+    wx.navigateTo({
+      url: '/pages/generate/index'
+    })
   }
 })

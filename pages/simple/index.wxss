@@ -68,6 +68,10 @@
     background-color: #f0f0f0;
 }
 
+.page-simple .btn-area button{
+    margin: 5px;
+}
+
 radio .wx-radio-input{
     border-radius:50%;
     width:18px;

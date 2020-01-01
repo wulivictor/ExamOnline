@@ -19,5 +19,8 @@
         <button class="btn" type="primary" bindtap="bindgoview">
             查看答案
         </button>
+        <button class="btn" type="primary"  open-type="share" bindtap="bindgoview">
+            分享
+        </button>
     </view>
 </view>

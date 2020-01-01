@@ -99,13 +99,18 @@ Page({
       },
       success (res) {
         console.log(res.data);
-        let value = res.data.result.value || '0'; 
-        let reformattedArray = items.map(obj =>{ 
-          if(obj.name == value){
-            obj.checked = value == 0 ? 'true' : 'false';
-          }
-          return obj;
-       });
+        let value = '0'; 
+        let reformattedArray = items;
+        if(res.data.result && res.data.result.value){
+           value = res.data.result.value;
+           reformattedArray = items.map(obj =>{ 
+            if(obj.name == value){
+              obj.checked = value == 0 ? 'true' : 'false';
+            }
+            return obj;
+          });
+        }
+  
        console.log(reformattedArray);
        _this.setData({
          mode: value,

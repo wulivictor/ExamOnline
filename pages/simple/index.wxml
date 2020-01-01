@@ -20,5 +20,7 @@
         <button class="btn" type="primary" bindtap="onNextTap">
             {{buttontext}}
         </button>
+        <button type="primary" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">生成海报</button>
+
     </view>
 </view>
