@@ -36,6 +36,18 @@
 .page-score .btn-area{
     padding: 10px;
     background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.page-score .btn-area button{
+    width: 80%
+}
+.page-score .btn-area button:nth-child(2){
+    margin-top: 15px;
 }
 
 /* 外层组件的宽度可设置成100%或具体数值 */

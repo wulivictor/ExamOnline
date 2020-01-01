@@ -31,7 +31,7 @@ Page({
       userInfo: app.globalData.userInfo,
       windowWidth: windowWidth,
       posterHeight: posterHeight,
-      score: options.score
+      score: 100
     })
   },
   /**
@@ -166,7 +166,7 @@ Page({
     const qrImagePath = '../../qrcode/'
     let promiseQrcodeImg = new Promise(function (resolve, reject) {
       wx.getImageInfo({
-        src: qrImagePath + "gh_d2778c07ec2e_258.jpg",
+        src: qrImagePath + "gh_3e9bb0bede36_344.jpg",
         success: function (res) {
           console.log('promiseQrcodeImg', res)
           resolve(res);
@@ -203,16 +203,16 @@ Page({
       ctx.setTextAlign('center')
       ctx.setFillStyle('#000')
       ctx.setFontSize(18) 
-      ctx.fillText(nickName, 125, 65)
+      ctx.fillText(nickName, 145, 65)
       ctx.stroke()
 
       ctx.beginPath();
       ctx.setTextAlign('center')
       ctx.setFillStyle('#000')
       ctx.setFontSize(22)      
-      ctx.fillText('垃圾分类大使', 180, 250)
+      ctx.fillText('在线答题小博士', 180, 250)
       ctx.setFontSize(18) 
-      ctx.fillText('欢迎参加垃圾分类挑战活动', 180, 414)
+      ctx.fillText('欢迎参加在线答题挑战活动', 180, 414)
       ctx.stroke()
       ctx.draw(true)
 

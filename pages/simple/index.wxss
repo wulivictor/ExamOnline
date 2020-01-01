@@ -66,10 +66,17 @@
 .page-simple .btn-area{
     padding: 10px;
     background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .page-simple .btn-area button{
-    margin: 5px;
+    width: 80%;
+}
+.page-simple .btn-area button:nth-child(2){
+    margin-top: 15px;
 }
 
 radio .wx-radio-input{
