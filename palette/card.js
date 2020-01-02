@@ -6,10 +6,19 @@ export default class LastMayday {
       background: '#eee',
       views: [
         _textTitle(title),
-        _textDecoration(o1, 0),
-        _textDecoration(o2, 1),
-        _textDecoration(o3, 2),
-        _textDecoration(o4, 3),
+        {
+          type: 'rect',
+          css: {
+            width: '750rpx',
+            height: '2rpx',
+            color: 'red',
+            top: `${startTop2 + l0 * gapSize}rpx`,
+          },
+        },
+        _textDecoration(o1, 0, l0),
+        _textDecoration(o2, 1, l0+l1),
+        _textDecoration(o3, 2, l0+l1+l2),
+        _textDecoration(o4, 3, l0+l1+l2+l3),
         _image()
       ],
     });
@@ -17,6 +26,7 @@ export default class LastMayday {
 }
 
 const startTop = 140;
+const startTop2 = 120;
 const startLeft = 20;
 const gapSize = 70;
 const common = {
@@ -31,22 +41,23 @@ function _textTitle(text) {
     text: text,
     css: [{
       top: '30rpx',
-      maxLines: 2,
-      width: '750rpx',
+      maxLines: 5,
+      width: '740rpx',
     }, common],
   });
 }
 
 
-function _textDecoration(text, index, color) {
+function _textDecoration(text, index, line) {
+  console.log(line);
   return ({
     type: 'text',
     text: text,
     css: [{
-      top: `${startTop + index * gapSize}rpx`,
-      maxLines: 2,
-      width: '750rpx',
-      color: color,
+      top: `${startTop + line * gapSize}rpx`,
+      padding: '2rpx',
+      maxLines: 3,
+      width: '740rpx',
     }, common],
   });
 }

@@ -131,15 +131,20 @@ Page({
         console.log(res.data);
         let question = res.data.result;
         let options = JSON.parse(question.options);
+
+        let title = question.title;
+        console.log(title.length); 
+
         let o1 = 'A：'+options[0]['content'];
         let o2 = 'B：'+options[1]['content'];
         let o3 = 'C：'+options[2]['content'];
         let o4 = 'D：'+options[3]['content'];   
-        let l0 = 1;
-        let l1 = 1;
-        let l2 = 1;
-        let l3 = 1;
-        let l4 = 1;
+        let l0 = parseInt(Math.ceil(parseInt(title.length)/20));
+        let l1 = parseInt(Math.ceil(parseInt(o1.length)/20));
+        let l2 = parseInt(Math.ceil(parseInt(o2.length)/20));
+        let l3 = parseInt(Math.ceil(parseInt(o3.length)/20));
+        let l4 = parseInt(Math.ceil(parseInt(o4.length)/20));
+        console.log(l0,l1,l2,l3,l4);
         _this.setData({
           question: question,
           template: new Card().palette(question.title,o1,o2,o3,o4,l0,l1,l2,l3,l4)
