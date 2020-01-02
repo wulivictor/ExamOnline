@@ -1,8 +1,8 @@
 export default class LastMayday {
   palette(title,o1,o2,o3,o4) {
     return ({
-      width: '654rpx',
-      height: '1000rpx',
+      width: '750rpx',
+      height: '1624rpx',
       background: '#eee',
       views: [
         _textTitle(title),
@@ -10,7 +10,7 @@ export default class LastMayday {
         _textDecoration(o2, 1),
         _textDecoration(o3, 2),
         _textDecoration(o4, 3),
-        _image(2)
+        _image()
       ],
     });
   }
@@ -32,7 +32,7 @@ function _textTitle(text) {
     css: [{
       top: '30rpx',
       maxLines: 2,
-      width: '650rpx',
+      width: '750rpx',
     }, common],
   });
 }
@@ -45,23 +45,22 @@ function _textDecoration(text, index, color) {
     css: [{
       top: `${startTop + index * gapSize}rpx`,
       maxLines: 2,
-      width: '650rpx',
+      width: '750rpx',
       color: color,
     }, common],
   });
 }
 
-function _image(index) {
+function _image() {
   return (
     {
       type: 'image',
       url: '/qrcode/gh_3e9bb0bede36_344.jpg',
       css: {
-        top: `${startTop + 8.5 * gapSize}rpx`,
-        left: `${startLeft + 160 * index}rpx`,
-        align: 'center',
-        width: '175rpx',
-        height: '175rpx'
+        top: '750rpx',
+        left: '275rpx',
+        width: '250rpx',
+        height: '250rpx'
       },
     }
   );

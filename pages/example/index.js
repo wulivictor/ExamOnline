@@ -28,11 +28,87 @@ Page({
   },
 
   saveImage() {
-    wx.saveImageToPhotosAlbum({
-      filePath: this.imagePath,
-    });
+    // wx.saveImageToPhotosAlbum({
+    //   filePath: this.imagePath,
+    // });
+    this.save({
+      tempFilePath: this.imagePath
+    })
   },
-
+  save: function(data){
+    wx.getSetting({
+      success: res => {
+        console.log(res);     
+        if (res.authSetting['scope.writePhotosAlbum']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+          wx.saveImageToPhotosAlbum({
+            filePath: data.tempFilePath,
+            success(result) {
+              wx.hideLoading()
+              wx.showModal({
+                showCancel: false,
+                title: '提示',
+                content: '海报已保存到本地',
+                success (res) {
+                  if (res.confirm) {
+                    console.log('用户点击确定')
+                  } else if (res.cancel) {
+                    console.log('用户点击取消')
+                  }
+                }
+              })
+              console.log(result)
+            }
+          })
+        }else if(!res.authSetting['scope.writePhotosAlbum']) {
+          wx.authorize({
+            scope: 'scope.writePhotosAlbum',
+            success(result) {
+              wx.saveImageToPhotosAlbum({
+                filePath: data.tempFilePath,
+                success(result) {
+                  wx.hideLoading()
+                  wx.showModal({
+                    showCancel: false,
+                    title: '提示',
+                    content: '海报已保存到本地',
+                    success (res) {
+                      if (res.confirm) {
+                        console.log('用户点击确定')
+                      } else if (res.cancel) {
+                        console.log('用户点击取消')
+                      }
+                    }
+                  })
+                  console.log(result)
+                },
+                fail: function(err){
+                  wx.showModal({
+                    showCancel: false,
+                    title: '提示',
+                    content: JSON.stringify(err),
+                    success (res) {
+                     
+                    }
+                  })
+                }
+              })
+            },
+            fail: function(err){
+              wx.showModal({
+                showCancel: false,
+                title: '提示',
+                content: JSON.stringify(err),
+                success (res) {
+                 
+                }
+              })
+            }
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
