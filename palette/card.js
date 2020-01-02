@@ -1,20 +1,12 @@
 export default class LastMayday {
   palette(title,o1,o2,o3,o4,l0,l1,l2,l3,l4) {
+    console.log(`${startTop2 + l0 * gapSize}rpx`);
     return ({
       width: '750rpx',
       height: '1624rpx',
-      background: '#eee',
+      background: '#fff',
       views: [
         _textTitle(title),
-        {
-          type: 'rect',
-          css: {
-            width: '750rpx',
-            height: '2rpx',
-            color: 'red',
-            top: `${startTop2 + l0 * gapSize}rpx`,
-          },
-        },
         _textDecoration(o1, 0, l0),
         _textDecoration(o2, 1, l0+l1),
         _textDecoration(o3, 2, l0+l1+l2),
@@ -37,10 +29,15 @@ const common = {
 
 function _textTitle(text) {
   return ({
+    id: 'title-id',
     type: 'text',
     text: text,
+    fontFamily: '仿宋',
     css: [{
-      top: '30rpx',
+      top: '100rpx',
+      lineHeight: '70rpx',
+      padding: '10rpx',
+      background: '#f0f0f0',
       maxLines: 5,
       width: '740rpx',
     }, common],
@@ -55,8 +52,9 @@ function _textDecoration(text, index, line) {
     text: text,
     css: [{
       top: `${startTop + line * gapSize}rpx`,
-      padding: '2rpx',
-      maxLines: 3,
+      padding: '10rpx',
+      maxLines: 5,
+      background: '#f0f0f0',
       width: '740rpx',
     }, common],
   });
@@ -86,10 +84,5 @@ function _des(index, content) {
       top: `${startTop + 8.5 * gapSize + 140}rpx`,
     },
   };
-  if (index === 3) {
-    des.css.right = '60rpx';
-  } else {
-    des.css.left = `${startLeft + 120 * index + 30}rpx`;
-  }
   return des;
 }

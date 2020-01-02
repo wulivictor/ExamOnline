@@ -48,7 +48,7 @@ Page({
               wx.showModal({
                 showCancel: false,
                 title: '提示',
-                content: '海报已保存到本地',
+                content: '图片已保存到本地',
                 success (res) {
                   if (res.confirm) {
                     console.log('用户点击确定')

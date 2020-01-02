@@ -9,3 +9,8 @@
   flex-direction: column;
   justify-content: center;
 }
+.btn-area{
+  position: fixed;
+  bottom: 50rpx;
+  width: 100%;
+}
