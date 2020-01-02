@@ -1,5 +1,5 @@
 export default class LastMayday {
-  palette(title,o1,o2,o3,o4) {
+  palette(title,o1,o2,o3,o4,l0,l1,l2,l3,l4) {
     return ({
       width: '750rpx',
       height: '1624rpx',

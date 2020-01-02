@@ -135,9 +135,14 @@ Page({
         let o2 = 'B：'+options[1]['content'];
         let o3 = 'C：'+options[2]['content'];
         let o4 = 'D：'+options[3]['content'];   
+        let l0 = 1;
+        let l1 = 1;
+        let l2 = 1;
+        let l3 = 1;
+        let l4 = 1;
         _this.setData({
           question: question,
-          template: new Card().palette(question.title,o1,o2,o3,o4)
+          template: new Card().palette(question.title,o1,o2,o3,o4,l0,l1,l2,l3,l4)
         },()=>{
           console.log('完成')
         })
