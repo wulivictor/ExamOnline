@@ -90,14 +90,16 @@ Page({
       success (res) {
         console.log(res.data);
         let arrayObject = res.data.result;
-
+        let arr = [];
         arrayObject.forEach(element => {
           element.options = JSON.parse(element.options);
+          arr.push(element.id);
         });
         _this.setData({
           questions: arrayObject
         },function(){
           wx.setStorageSync('questions', arrayObject);
+          wx.setStorageSync('arr', arr);
         })
       }
     });

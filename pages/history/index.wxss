@@ -48,7 +48,8 @@
     color: #B2B2B2;
 }
 /* 外层组件的宽度可设置成100%或具体数值 */
-.adContainer {
+.page-history .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
-    margin-top: 5px;
 }

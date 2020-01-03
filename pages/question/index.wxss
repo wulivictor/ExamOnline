@@ -17,6 +17,7 @@
     background-color: #f0f0f0;
     padding-top:5px;
     padding-bottom:5px;
+    min-height: 50px;
 }
 .page-question .question-container .question .sortcode{
     padding-left: 10px;
@@ -40,4 +41,5 @@
 }
 .page-question .btn-area{
     padding: 10px;
+    margin-bottom: 100px;
 }

@@ -4,8 +4,7 @@
     <block wx:for="{{questions}}" wx:key="id" wx:for-index="idx" wx:for-item="question">
     <view class="question-container">
         <view class="question">
-            <view class="sortcode">{{idx+1}}，</view>
-            <view class="title">{{question.title}}</view>
+            <view class="title">{{idx+1}}，{{question.title}}</view>
         </view>
         <view class="options">
             <radio-group class="radio-group" bindchange="radioChange">

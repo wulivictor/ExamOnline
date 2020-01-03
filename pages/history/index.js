@@ -71,8 +71,16 @@ Page({
       success (res) {
         console.log(res.data)
         let data = res.data;
+        let items = [];
+        let arrayObject = data.result;
+        if(arrayObject && arrayObject.length>0){
+          items = arrayObject.slice(0,5);
+        }
+        items.map((item)=>{
+          item.createTime = item.createTime.substr(0,10);
+        })
         _this.setData({
-          items: data.result
+          items
         });
       }
     });

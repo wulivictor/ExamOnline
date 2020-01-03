@@ -1,5 +1,5 @@
 <view class="page-study">
-    <view class="name">请选择考试科目：</view>
+    <view class="name" wx:if="{{subjects.length>0}}">请选择考试科目：</view>
     <view class="subjects">
         <radio-group class="radio-group" bindchange="radioChange">
             <radio class="radio" wx:for-items="{{subjects}}" wx:key="code" value="{{item.code}}" checked="{{item.checked}}">
@@ -7,7 +7,7 @@
             </radio>
         </radio-group>
     </view>
-    <view class="btn-area">
+    <view class="btn-area" wx:if="{{subjects.length>0}}">
         <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="toDetailPage"> 确定 </button>
     </view>
