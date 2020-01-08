@@ -64,7 +64,7 @@
     display: inline;
 }
 .page-simple .btn-area{
-    padding: 10px;
+    padding: 10px 0;
     background-color: #f0f0f0;
     width: 100%;
     display: flex;

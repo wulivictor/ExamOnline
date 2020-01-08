@@ -4,14 +4,27 @@ export default class LastMayday {
     return ({
       width: '750rpx',
       height: '1624rpx',
-      background: '#fff',
+      background: '#07c160',
+      borderWidth: '7rpx',
+      borderColor: '#07c160',
       views: [
         _textTitle(title),
         _textDecoration(o1, 0, l0),
         _textDecoration(o2, 1, l0+l1),
         _textDecoration(o3, 2, l0+l1+l2),
         _textDecoration(o4, 3, l0+l1+l2+l3),
-        _image()
+        _image(),
+        {
+          type: 'text',
+          text: `快来扫码体验吧`,
+          css: {
+            top: '1050rpx',
+            left: '375rpx',
+            align: 'center',
+            fontSize: '40rpx',
+            color: '#fff'
+          }
+        },
       ],
     });
   }
@@ -32,14 +45,12 @@ function _textTitle(text) {
     id: 'title-id',
     type: 'text',
     text: text,
-    fontFamily: '仿宋',
     css: [{
       top: '100rpx',
       lineHeight: '70rpx',
-      padding: '10rpx',
-      background: '#f0f0f0',
+      color: '#fff',
       maxLines: 5,
-      width: '740rpx',
+      width: '730rpx',
     }, common],
   });
 }
@@ -52,10 +63,9 @@ function _textDecoration(text, index, line) {
     text: text,
     css: [{
       top: `${startTop + line * gapSize}rpx`,
-      padding: '10rpx',
       maxLines: 5,
-      background: '#f0f0f0',
-      width: '740rpx',
+      color: '#fff',
+      width: '730rpx',
     }, common],
   });
 }
@@ -67,7 +77,8 @@ function _image() {
       url: '/qrcode/gh_3e9bb0bede36_344.jpg',
       css: {
         top: '750rpx',
-        left: '275rpx',
+        left: '250rpx',
+        borderRadius: '25rpx',
         width: '250rpx',
         height: '250rpx'
       },

@@ -212,7 +212,7 @@ Page({
       ctx.setFontSize(22)      
       ctx.fillText('在线答题小博士', 180, 250)
       ctx.setFontSize(18) 
-      ctx.fillText('欢迎参加在线答题挑战活动', 180, 414)
+      ctx.fillText('欢迎扫码参加答题活动', 180, 414)
       ctx.stroke()
       ctx.draw(true)
 
