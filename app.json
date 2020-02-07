@@ -20,7 +20,8 @@
     "pages/subjects/index",
     "pages/study/index",
     "pages/detail/index",
-    "pages/example/index"
+    "pages/example/index",
+    "pages/pay/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,16 @@
+.page-wrapper{
+  text-align: center;
+}
+.page-wrapper .paycode{
+  width: 320px;
+  height: 320px;
+}
+.page-wrapper button{
+  width: 90%;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-wrapper .adContainer {
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}

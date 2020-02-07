@@ -124,6 +124,12 @@ Page({
       url: url
     })
   },
+  bindgopay: function(){
+    let url = '/pages/pay/index';
+    wx.navigateTo({
+      url: url
+    })
+  },
   bindgorule: function(){
     let url = '/pages/rule/index';
     wx.navigateTo({
