@@ -1,6 +1,6 @@
 <view class="page-about">
     <view class="title">关于我们</view>
-    <view class="desc">从业考试答题助手主要面向从业人员，提供证券从业资格考试、基金从业资格考试练习以及历年真题模拟</view>
+    <view class="desc">本小程序主要提供在线模拟考试，在线答题测评等，具体请联系小程序开发者微信：jglxiao</view>
     <view class="adContainer">
     <ad unit-id="adunit-95b163db26d4b79c" ad-type="video" ad-theme="white"></ad>  
     </view>
