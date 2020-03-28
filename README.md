@@ -28,4 +28,5 @@
 目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我，微信号：jglxiao
 
 ![Image text]( https://s1.ax1x.com/2020/03/28/GAACKU.jpg)
+![Image text]( https://s1.ax1x.com/2020/03/28/GAAe8x.jpg)
 ![Image text]( https://s1.ax1x.com/2020/03/28/GAkz80.jpg)
