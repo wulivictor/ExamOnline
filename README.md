@@ -1,11 +1,11 @@
 
 ## 具体界面
-我把界面截图在微信开放社区了
-https://developers.weixin.qq.com/community/develop/article/doc/0000284e7708e0b5e979f382059c13
+    我把界面截图在微信开放社区了
+    https://developers.weixin.qq.com/community/develop/article/doc/0000284e7708e0b5e979f382059c13
 
 ## 注意事项
-   2020年4月13号，由于这个小程序越来越多用户学习使用，我今天把代码拉下来，导入到微信开发者工具，在微信开发者工具，详情-本地设置，不校验合法域名处勾选复选框，就可以正常访问。
-   https://developers.weixin.qq.com/community/develop/article/doc/000e206d074d98bcd52af84e051013
+    2020年4月13号，由于这个小程序越来越多用户学习使用，我今天把代码拉下来，导入到微信开发者工具，在微信开发者工具，详情-本地设置，不校验合法域名处勾选复选框，就可以正常访问。
+    https://developers.weixin.qq.com/community/develop/article/doc/000e206d074d98bcd52af84e051013
 
 
 ## 介绍
