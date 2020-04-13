@@ -11,7 +11,5 @@
         <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="goQuestion"> 去答题 </button>
     </view>
-    <view class="adContainer">
-        <ad unit-id="adunit-3d52319b35700a17" ad-type="video" ad-theme="white"></ad>
-    </view>
+
 </view>

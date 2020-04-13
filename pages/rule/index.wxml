@@ -10,8 +10,6 @@
         <text>2、每次考试总共有10个题目，每题1分，满分为10分</text>
         </view>
     </view>
-    <view class="adContainer">
-    <ad unit-id="adunit-2771021667a7c480" ad-type="video" ad-theme="white"></ad>
-    </view>
+
 </view>
 
