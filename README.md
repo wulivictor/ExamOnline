@@ -15,7 +15,7 @@ https://developers.weixin.qq.com/community/develop/article/doc/000e206d074d98bcd
 
 ## 如何体验
 
-    微信小程序搜索：在线答题小博士
+    微信小程序搜索：在线答题小博士，开源不易，且行且珍惜，您的打赏是对我最大的鼓励，在我的，赞助打赏模块可以打赏
 
 
 ### 更新记录
