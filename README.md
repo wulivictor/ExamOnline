@@ -52,7 +52,7 @@ https://developers.weixin.qq.com/community/develop/article/doc/000e206d074d98bcd
 + 查看错题记录
 + 生成海报
 
-## 联系
+## 扫码体验
 
 目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我，微信号：jglxiao
 
