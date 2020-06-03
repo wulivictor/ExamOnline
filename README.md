@@ -78,6 +78,9 @@ https://developers.weixin.qq.com/community/develop/article/doc/000e206d074d98bcd
 
 这里的图片都是258*258
 
+## 联系
+![](https://images.gitee.com/uploads/images/2020/0602/105104_39e9bb08_1307964.jpeg)
+
 ##  付费服务
    
     2020-05-25更新，如果您在答题小程序学习遇到问题，我们也提供付费服务，只需要200元便可以成为我们的付费客户，付费客户享受下面优质服务：
