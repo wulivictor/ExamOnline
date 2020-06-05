@@ -79,7 +79,7 @@ https://developers.weixin.qq.com/community/develop/article/doc/000e206d074d98bcd
 这里的图片都是258*258
 
 ## 联系
-![](https://images.gitee.com/uploads/images/2020/0602/105104_39e9bb08_1307964.jpeg)
+![](https://s1.ax1x.com/2020/06/05/tySb7R.th.jpg)
 
 ##  付费服务
    
