@@ -1,0 +1,73 @@
+page{
+    background-color: #f2f2f2;
+}
+.page-subjects{
+    width: 100%;
+}
+
+.page-subjects .header{
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+.page-subjects .subjects{
+    margin-top: 10px;
+}
+
+.page-subjects .subjects .subject{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1rpx solid #ebebeb;
+    height: 45px;
+    text-align: left;
+}
+.page-subjects .subjects .subject .sortnum{
+    background-color: #1bcfad;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+.page-subjects .subjects .subject .name{
+    padding-left: 5px;
+    flex-grow: 8;
+}
+.page-subjects .subjects .subject .arraw{
+    flex-grow: 1;
+    padding-right: 5px;
+    color: #B2B2B2;
+    text-align: right;
+}
+
+.page-subjects .btn-area{
+    background-color: #f0f0f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-subjects .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.radio-group {
+    border-bottom: 1px solid #ddd;
+}
+.radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}

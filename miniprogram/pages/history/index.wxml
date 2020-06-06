@@ -1,0 +1,15 @@
+<view class="page-history">
+    <view class="title">您参与的答题记录如下(展示最近5条)：</view>
+    <view class="historys">
+        <block wx:for="{{items}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+            <view class="history" bindtap="toReviewPage" data-id="{{item._id}}">
+                <view class="sortnum">{{idx+1}}</view>
+                <view class="name">({{item.createTime}}){{item.subject.name}}-{{item.rightNum}}分</view>
+                <view class="arraw">></view>
+            </view>       
+        </block>
+    </view>
+    <view class="adContainer">
+        <ad unit-id="adunit-8f925e8e1afdc0f6" ad-type="video" ad-theme="white"></ad>
+    </view>
+</view>

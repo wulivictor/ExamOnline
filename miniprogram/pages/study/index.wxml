@@ -1,0 +1,16 @@
+<wxs src="./../tools.wxs" module="JSON" />
+<view class="page-history">
+    <view class="name">请选择考试科目：</view>
+    <view class="historys">
+        <block wx:for="{{items}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+            <view class="history" bindtap="toNotePage" data-id="{{item._id}}">
+                <view class="sortnum">{{idx+1}}</view>
+                <view class="name">({{item.createTime}}){{item.subject.name}}-{{item.rightNum}}分</view>
+                <view class="arraw">></view>
+            </view>       
+        </block>
+    </view>
+    <view class="adContainer">
+        <ad unit-id="adunit-73ddae762adc91bd" ad-type="video" ad-theme="white"></ad>
+    </view>
+</view>

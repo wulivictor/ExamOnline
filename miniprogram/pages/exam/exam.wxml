@@ -1,0 +1,27 @@
+<wxs src="./../tools.wxs" module="JSON" />
+<view class="exam">
+    <view class="sortnumber">
+        <view class="left">正在诊断考点的掌握情况</view>
+        <view class="right">
+            <text>{{idx+1}}</text>/<text>{{length}}</text></view>
+    </view>
+    <view class="progress">
+        <progress percent="{{percent}}" color="#1dcc70" active />
+    </view>
+    <view class="question">
+        <view class="title">{{question.title}}</view>
+        <view class="type">{{question.typename}}</view>
+        <view class="options">
+            <view wx:for="{{options}}" wx:for-index="idx" wx:for-item="item" class="option"  data-value="{{JSON.stringify(item)}}" bindtap="selectOption">
+                <view class="icon">
+                    <image src="{{item.selected ? '/images/radio-selected.png' : '/images/radio.png'}}" />
+                </view>
+                <view class="content">{{item.code}}: {{item.content}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="btn-area" bindtap="doNext">
+        <view class="button">{{btnText}}</view>
+    </view>
+    
+</view>

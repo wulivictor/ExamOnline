@@ -1,0 +1,27 @@
+module.exports = {
+    stringify : function(item){
+        return JSON.stringify(item)
+    },
+    getStyle: function(status,code,answer,selected){
+        console.log(code,answer,selected)
+        if(status > 0 && code == answer){
+            return 'right'
+        }
+        if(status > 0 && code == selected && answer != selected){
+            return 'wrong'
+        }
+        if(code!=selected){
+            return ''
+        }
+    },
+    getStyle2: function(value){
+        if(value==1){
+            return 'right'
+        }else{
+            return ''
+        }
+    },
+    key : function(){
+        return Math.random()
+    }
+}

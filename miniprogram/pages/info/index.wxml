@@ -1,0 +1,45 @@
+<view class="page-info">
+    <view class="header">
+        <view class="avatar"><open-data type="userAvatarUrl"></open-data></view>
+        <view class="nickname"><open-data type="userNickName"></open-data></view>
+    </view>
+    <view class="menus">
+        <view class="menu" bindtap="bindMyHistory" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/recordicon.png"></image>
+            <text class="title">答题记录</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+        <view class="menu" bindtap="bindMyStudy" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/listicon.png"></image>
+            <text class="title">错题记录</text>
+            </view>
+            <view class="arraw">></view>
+        </view>   
+        <view class="menu" bindtap="bindgorule" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/lookicon.png"></image>
+            <text class="title">使用说明</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+        <view class="menu" bindtap="bindgopay" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/moneyicon.png"></image>
+            <text class="title">赞助打赏</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+                  
+        <view class="menu" bindtap="bindgoabout" >
+            <view class="left">
+            <image class="icon" style="background-color: #eeeeee;" mode="aspectFill" src="http://file.xiaomutong.com.cn/20200206/loveicon.png"></image>
+            <text class="title">关于我们</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+    </view>
+
+</view>

@@ -1,0 +1,26 @@
+<wxs src="./../tools.wxs" module="JSON" />
+<view class="page-simple">
+    <view class="sortnumber"> 
+    <text class="current">{{idx+1}}</text>/<text class="total">10</text>
+    </view>
+    <view class="question">
+        <view class="title"><text>{{idx+1}}、{{question.title}}</text></view>
+        <view class="type">{{question.typename}}</view>
+        <view class="options">
+            <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{options}}" wx:key="id">
+                <view class="option-content">
+                    <radio value="{{JSON.stringify(item)}}" checked="{{item.checked}}"></radio>
+                    <text class="content">{{item.code}}，{{item.content}}</text>
+                </view>
+            </label>
+            </radio-group>
+        </view>
+    </view>
+    <view class="btn-area">
+        <view class="btn" bindtap="onNextTap">
+            {{buttontext}}
+        </view>
+
+    </view>
+</view>

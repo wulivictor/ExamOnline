@@ -1,9 +1,0 @@
-<view>
-    <view style='position: relative;'>
-      <painter customStyle='position: absolute; left: -9999rpx;' palette="{{template}}" bind:imgOK="onImgOK" widthPixels="1000"/>
-      <image src="{{image}}" style="width: 750rpx; height: 1624rpx;"/>
-    </view>
-    <view class="btn-area">
-      <button type="primary" style='' bind:tap='saveImage'>保存</button>
-    </view>
-</view>

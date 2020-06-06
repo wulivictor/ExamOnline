@@ -1,0 +1,104 @@
+page{
+    background-color: #f8fafc;
+}
+.page-simple{
+    width: 100%;
+}
+.page-simple .sortnumber{
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 35px;
+}
+.page-simple .sortnumber .current{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1bcfad;
+}
+.page-simple .sortnumber .total{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1bcfad;
+}
+.page-simple .question{
+    
+}
+.page-simple .question .title{
+    background-color: #fff;
+    width: 95%;
+    padding: 10px;
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-simple .question .title text{
+    height: 100%;
+}
+.page-simple .question .type{
+    background-color: #fff;
+    margin: 5px 0;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.page-simple .question .options{
+    background-color: #fff;
+}
+.page-simple .question .option{
+    padding: 5px;
+}
+.page-simple .radio-group {
+    border-bottom: 1px solid #f8fafc;
+    padding: 5px 0;
+}
+.page-simple .radio {
+    display: block;
+    border-top: 1px solid #f8fafc;
+    padding: 10px;
+}
+.page-simple .radio .option-content{
+
+}
+.page-simple .radio .option-content radio{
+    display: inline;
+}
+.page-simple .radio .option-content .content{
+    display: inline;
+}
+.page-simple .btn-area{
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.page-simple .btn-area .btn{
+    background-color: #1bcfad;
+    width: 375rpx;
+    border-radius: 35px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+
+radio .wx-radio-input{
+    border-radius:50%;
+    width:18px;
+    height:18px;
+}

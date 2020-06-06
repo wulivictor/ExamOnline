@@ -1,0 +1,57 @@
+page{
+    background-color: #f2f2f2;
+}
+.page-entry{
+    width: 100%;
+}
+
+.page-entry .header{
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+.page-entry .modes{
+    margin-top: 10px;
+}
+
+.page-entry .modes .mode{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1rpx solid #ebebeb;
+    height: 45px;
+    text-align: left;
+}
+.page-entry .modes .mode .sortnum{
+    background-color: #1bcfad;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+.page-entry .modes .mode .name{
+    padding-left: 5px;
+    flex-grow: 8;
+}
+.page-entry .modes .mode .arraw{
+    flex-grow: 1;
+    padding-right: 5px;
+    color: #B2B2B2;
+    text-align: right;
+}
+
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-entry .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}

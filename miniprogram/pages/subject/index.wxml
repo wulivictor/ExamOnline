@@ -1,0 +1,16 @@
+<view class="page-subjects">
+    <view class="header">请选择考试科目：</view>
+    <view class="subjects">
+        <block wx:for="{{subjects}}" wx:key="*this" wx:for-index="idx" wx:for-item="subject">
+            <view class="subject" bindtap="toEntryPage" data-id="{{subject._id}}">
+                <view class="sortnum">{{idx+1}}</view>
+                <view class="name">{{subject.name}}</view>
+                <view class="arraw">></view>
+            </view>       
+        </block>
+    </view>
+
+    <view class="adContainer">
+        <ad unit-id="adunit-f7f32e30750c491b" ad-type="video" ad-theme="white"></ad>
+    </view>
+</view>

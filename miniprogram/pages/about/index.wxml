@@ -1,0 +1,7 @@
+<view class="page-about">
+    <view class="title">关于我们</view>
+    <view class="desc">本小程序主要用于提供在线模拟考试，在线答题测评用，具体请联系小程序开发者jglxiao</view>
+    <view class="adContainer">
+    <ad unit-id="adunit-e5d86e20f94a0b6d" ad-type="video" ad-theme="white"></ad>
+    </view>
+</view>
