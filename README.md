@@ -6,7 +6,8 @@
 ## 如何体验
 
     微信小程序搜索：公考刷题库
-    
+    ![输入图片说明](https://images.gitee.com/uploads/images/2020/0912/122153_eb3ee87d_1947212.jpeg "gh_15af2ff18336_258.jpg")
+
 
 ## 如何打赏
 
@@ -35,7 +36,6 @@
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg "微信图片_20200726160114_副本.jpg")
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0912/122153_eb3ee87d_1947212.jpeg "gh_15af2ff18336_258.jpg")
 
 
 
