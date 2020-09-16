@@ -5,9 +5,9 @@
 
 ## 如何体验
 
-    微信小程序搜索：公考刷题库
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0912/124352_ba56048d_1947212.jpeg "gh_15af2ff18336_258.jpg")
+    微信小程序搜索：百词斩丨英语刷题备考
 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0916/220049_bb9fe804_1947212.jpeg "微信图片_20200916220045.jpg")
 
 ### 更新记录
 
