@@ -15,7 +15,7 @@
 
     微信小程序搜索：百词斩丨英语刷题备考
 
-<img src = "https://images.gitee.com/uploads/images/2020/0916/220049_bb9fe804_1947212.jpeg" width = "60%">
+<img src = "https://images.gitee.com/uploads/images/2020/0916/220049_bb9fe804_1947212.jpeg" width = "50%">
 
 ## 特点
 + 答题分单题模式和列表模式
@@ -36,19 +36,14 @@
 ## 联系
 
 目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我 wl0000123456789
-<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "60%">
+<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
 
 
 
 
 ## 小程序截图
-<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/090003_3535dbb6_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/090016_074ca037_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/090023_990104f1_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/090029_6a680bf0_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/090038_eb4281b7_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090003_3535dbb6_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090016_074ca037_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090023_990104f1_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2020/0917/090029_6a680bf0_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090038_eb4281b7_1947212.png" width = "30%">
 
 
