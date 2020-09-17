@@ -42,8 +42,6 @@
 
 
 ## 小程序截图
-<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090003_3535dbb6_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090016_074ca037_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090023_990104f1_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2020/0917/090029_6a680bf0_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2020/0917/090038_eb4281b7_1947212.png" width = "30%">
-
+<img src = "https://images.gitee.com/uploads/images/2020/0917/090003_3535dbb6_1947212.png" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/090016_074ca037_1947212.png" width = "30%">        <img src = "https://images.gitee.com/uploads/images/2020/0917/090023_990104f1_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2020/0917/090029_6a680bf0_1947212.png" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/090038_eb4281b7_1947212.png" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%">
 
