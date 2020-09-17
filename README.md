@@ -15,7 +15,7 @@
 
     微信小程序搜索：百词斩丨英语刷题备考
 
-<img src = "https://images.gitee.com/uploads/images/2020/0916/220049_bb9fe804_1947212.jpeg" width = "50%">
+<img src = "https://images.gitee.com/uploads/images/2020/0916/220049_bb9fe804_1947212.jpeg" width = "20%">
 
 ## 特点
 + 答题分单题模式和列表模式
