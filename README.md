@@ -38,7 +38,7 @@
 
 
 ## 小程序截图
-<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "100px" height = "100px">
+<img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%">
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png "微信图片_20200912130829.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/090003_3535dbb6_1947212.png "微信图片_20200917085703.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0917/090009_6ae5f902_1947212.png "微信图片_20200917085710.png")
