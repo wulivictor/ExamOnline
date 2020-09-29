@@ -9,6 +9,10 @@
 
     微信小程序搜索：百词斩丨英语刷题备考
 
+## 联系
+
+目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我：music9866 (备注好来自github)
+<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
 <img src = "https://images.gitee.com/uploads/images/2020/0916/220049_bb9fe804_1947212.jpeg" width = "20%">
 
 ## 适用场景
@@ -38,7 +42,3 @@
 [CHANGELOG](./CHANGELOG.md)
 
 
-## 联系
-
-目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我 wl0000123456789 (备注好来自github)
-<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
