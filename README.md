@@ -5,7 +5,7 @@
 <img src = "https://images.gitee.com/uploads/images/2020/0918/221007_79c85fe9_1947212.jpeg" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/090016_074ca037_1947212.png" width = "30%">        <img src = "https://images.gitee.com/uploads/images/2020/0917/090023_990104f1_1947212.png" width = "30%">
 <img src = "https://images.gitee.com/uploads/images/2020/0917/090029_6a680bf0_1947212.png" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/090038_eb4281b7_1947212.png" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%">
 
-## 如何体验  也可以咨询我微信 music9866 (备注好来自码云)
+## 如何体验  需要帮助也可以咨询我微信 music9866 (备注好来自码云)
 
     微信小程序搜索：百词斩丨英语刷题备考
 
@@ -40,5 +40,5 @@
 
 ## 联系
 
-目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我 wl0000123456789 (备注好来自码云)
+目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我 music9866 (备注好来自码云)
 <img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
