@@ -15,6 +15,7 @@
 
 <img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
 ## 体验
+
      扫码体验
      <img src = "https://images.gitee.com/uploads/images/2021/0416/110018_62d9fa0b_1947212.jpeg" width = "30%">
 
