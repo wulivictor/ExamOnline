@@ -14,7 +14,7 @@
 
 ## 如何体验  需要帮助也可以咨询我微信 music9866 (备注好来自码云)
 
-<img src = "https://images.gitee.com/uploads/images/2021/0418/080852_b75b96c6_1947212.jpeg "110018_62d9fa0b_1947212.jpeg" width = "20%">
+<img src = "https://images.gitee.com/uploads/images/2021/0418/080852_b75b96c6_1947212.jpeg" width = "20%">
 
 
 ##  如果您是某某培训机构，学校，政府，公司，想拥有自己的小程序，欢迎联系，帮部署及合作定制开发
