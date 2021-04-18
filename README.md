@@ -5,21 +5,19 @@
 <img src = "https://images.gitee.com/uploads/images/2020/0918/221007_79c85fe9_1947212.jpeg" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/090016_074ca037_1947212.png" width = "30%">        <img src = "https://images.gitee.com/uploads/images/2020/0917/090023_990104f1_1947212.png" width = "30%">
 <img src = "https://images.gitee.com/uploads/images/2020/0917/090029_6a680bf0_1947212.png" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/090038_eb4281b7_1947212.png" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/085955_e703acf8_1947212.png" width = "30%">
 
-## 如何体验  也可以咨询我微信：music9866(备注好来自github)
-
-    微信小程序搜索：百词斩丨英语刷题备考
-
 ## 联系
 
-     目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我：music9866 (备注好来自github)
-
+目前小程序已经通过审核，并且发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我 music9866 (备注好来自码云)
 <img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
-## 体验
 
-     扫码体验
-     <img src = "https://images.gitee.com/uploads/images/2021/0416/110018_62d9fa0b_1947212.jpeg" width = "30%">
 
-## 适用场景
+## 如何体验  需要帮助也可以咨询我微信 music9866 (备注好来自码云)
+
+<img src = "https://images.gitee.com/uploads/images/2021/0418/080852_b75b96c6_1947212.jpeg" width = "20%">
+
+
+##  如果您是某某培训机构，学校，政府，公司，想拥有自己的小程序，欢迎联系，帮部署及合作定制开发
+ "30%">## 适用场景
      1 ·企业招聘考试。候选人等候时面试可手机扫码参加笔试，系统实时生成结果，一个简单的考核就可让面试官提前了解候选人的能力
      情况。在大规模校园聘会上公布考试地址，考生现场完成考试，现场出分，主办方可快速筛选合格考生参加面试，大大缩短招聘周期和成本。
 
