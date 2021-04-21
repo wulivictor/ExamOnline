@@ -1,5 +1,5 @@
 ## 介绍
-     在校考试答题小程序，主要用于企业、事业单位、政府机构、学校和教育培训机构在线答题，在线模拟考试，在线刷题备考等场景。
+     在校考试答题小程序，主要用于企业、事业单位、政府机构、学校和教育培训机构在线答题，在线模拟考试，内部考核，党建答题，在线刷题备考等场景。
 
 ## 小程序截图
 <img src = "https://images.gitee.com/uploads/images/2020/0918/221007_79c85fe9_1947212.jpeg" width = "30%">       <img src = "https://images.gitee.com/uploads/images/2020/0917/090016_074ca037_1947212.png" width = "30%">        <img src = "https://images.gitee.com/uploads/images/2020/0917/090023_990104f1_1947212.png" width = "30%">
