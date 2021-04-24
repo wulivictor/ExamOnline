@@ -11,7 +11,7 @@
 <img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
 
 
-## 如何体验  需要帮助也可以咨询我微信 music9866 (备注好来自码云)
+## 如何体验  需要帮助也可以咨询我微信 music9866 (备注好来自github)
 
 <img src = "https://images.gitee.com/uploads/images/2021/0418/080852_b75b96c6_1947212.jpeg" width = "20%">
 
