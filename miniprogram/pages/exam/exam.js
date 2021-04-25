@@ -296,6 +296,7 @@ Page({
       name: 'login',
       data: {},
       success: res => {
+        debugger
         console.log('[云函数] [login]: ', res)
         app.globalData.openid = res.result.openid
         that.setData({

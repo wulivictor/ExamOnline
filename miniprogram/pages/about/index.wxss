@@ -24,3 +24,12 @@
     margin-top: 10px;
     padding-bottom: 10px;
 }
+
+
+.wechat{
+    font-weight: 700;
+    color: red;
+    display: inline;
+
+
+}
