@@ -1,19 +1,18 @@
+// pages/im/im.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgArr:[
-      "https://www.freedream.club/mywechat.jpg"
-    ]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
@@ -63,28 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  goNext: function(){
-    wx.navigateTo({
-      url: '../home/index'
-    })
-  },
-  previewImg:function(e){
-    console.log(e.currentTarget.dataset.index);
-    var index = e.currentTarget.dataset.index;
-    var imgArr = this.data.imgArr;
-    wx.previewImage({
-      current: imgArr[index],     //当前图片地址
-      urls: imgArr,               //所有要预览的图片的地址集合 数组形式
-      success: function(res) {
-        console.log(res)
-      },
-      fail: function(res) {
-        console.log(res)
-      },
-      complete: function(res) {
-        console.log(res)
-      },
-    })
   }
 })
