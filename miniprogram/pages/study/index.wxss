@@ -1,0 +1,62 @@
+.page-history{
+    width: 98%;
+    height: 100%;
+    margin:0 auto;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 2px;
+}
+.page-history .title{
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    color:#000;
+    height: 50px;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-history .history{
+    padding-top: 5px;
+}
+.page-history .addition{
+    margin-top: 10px;
+}
+.page-history .historys .history{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1rpx solid #ebebeb;
+    height: 45px;
+    text-align: left;
+}
+.page-history .historys .history .sortnum{
+    background-color: #1bcfad;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+.page-history .historys .history .name{
+    padding-left: 5px;
+    flex-grow: 8;
+}
+.page-history .historys .history .arraw{
+    flex-grow: 1;
+    padding-right: 5px;
+    color: #B2B2B2;
+    text-align: right;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-history .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}

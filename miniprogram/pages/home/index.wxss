@@ -1,0 +1,61 @@
+.page-home{
+    width: 98%;
+    height: 100%;
+    margin:0 auto;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 2px;
+}
+.page-home .title{
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    color:#000;
+    height: 50px;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-home .home{
+    padding-top: 5px;
+}
+.page-home .addition{
+    margin-top: 10px;
+}
+.page-home .home .brand{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1rpx solid #ebebeb;
+    height: 45px;
+    text-align: left;
+}
+.page-home .home .brand .sortnum{
+    background-color: #1bcfad;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+.page-home .home .brand .name{
+    padding-left: 5px;
+    flex-grow: 8;
+}
+.page-home .home .brand .arraw{
+    flex-grow: 1;
+    padding-right: 5px;
+    color: #B2B2B2;
+    text-align: right;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.adContainer {
+    width: 100%;
+    margin-top: 5px;
+}

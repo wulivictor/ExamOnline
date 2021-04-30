@@ -1,0 +1,35 @@
+.page-about{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+.page-about .title{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: #fff;
+    padding-left: 10px;
+}
+.page-about .desc{
+    height: 250px;
+    background-color: #fff;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 97%;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.adContainer {
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.wechat{
+    font-weight: 700;
+    color: red;
+    display: inline;
+
+
+}

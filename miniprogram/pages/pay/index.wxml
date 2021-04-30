@@ -1,0 +1,11 @@
+<view class="page-wrapper">
+  <view class='imgList-li' wx:for='{{imgArr}}'>
+    <image class='paycode' src='{{item}}' data-index='{{index}}' bindtap='previewImg'></image>
+  </view>
+  <view >
+    添加微信
+  </view>
+  <view class="adContainer">
+  <ad unit-id="adunit-0407c1c60cdbc12f" ad-type="video" ad-theme="white"></ad>
+  </view>
+</view>

@@ -1,0 +1,75 @@
+.page-detail{
+    width: 100%;
+}
+.page-detail .sortnumber{
+    background-color: #f0f0f0;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 35px;
+}
+.page-detail .sortnumber .current{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #07c160;
+}
+.page-detail .sortnumber .total{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #54A5A2;
+}
+.page-detail .question{
+    
+}
+.page-detail .question .title{
+    background-color: #fff;
+    width: 95%;
+    padding: 10px;
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-detail .question .title text{
+    height: 100%;
+}
+.page-detail .question .option{
+    padding: 5px;
+}
+.page-detail .radio-group {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+}
+.page-detail .radio {
+    display: block;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.page-detail .radio .option-content{
+    display: inline;
+}
+.page-detail .radio radio{
+    display: inline;
+}
+.page-detail .radio text{
+    display: inline;
+}
+.page-detail .btn-area{
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+radio .wx-radio-input{
+    border-radius:50%;
+    width:18px;
+    height:18px;
+}

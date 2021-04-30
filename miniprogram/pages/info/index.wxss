@@ -1,0 +1,70 @@
+.page-info{
+    width: 98%;
+    margin:0 auto;
+    height: -webkit-fill-available;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 2px;
+}
+.page-info .header{
+    background: #fff;
+    height: 150px;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-info .header .avatar{
+    width: 75px;
+    padding-left: 10px;
+}
+.page-info .header .avatar .avatarimage{
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+.page-info .header .nickname{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.page-info .menus{
+    margin-top: 10px;
+}
+.page-info .menus .menu{
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1px;
+    padding-left: 10px;
+    text-align: left;
+    background: #fff;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.page-info .menu .left{
+    width: 90%;
+    display: flex;
+    flex-direction: box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page-info .menu .icon{
+    width: 32px;
+    height: 32px;
+}
+.page-info .menu .title{
+    padding-left: 10px;
+}
+.page-info .menu .arraw{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    padding-right: 16px;
+    display: inline-block;
+    color: #B2B2B2;
+}

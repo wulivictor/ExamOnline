@@ -1,0 +1,58 @@
+.page-score{
+    width: 100%;
+}
+.page-score .score-area{
+    background-color: #fff;
+    height: 250px;
+    text-align: center;
+}
+.page-score .score-area .title{
+    background-color: #f0f0f0;
+    padding: 10px;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    border-bottom: 1px solid #179B16;
+}
+.page-score .score-area .value-area{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 10px;
+}
+.page-score .score-area .score{
+    text-align: center;
+    height: 30px;
+    vertical-align: middle;
+    width: 30px;
+    border-radius: 15px;
+    border: 1px solid #f00;
+    background-color: #07c160;
+}
+.page-score .btn-area{
+    padding: 10px;
+    background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.page-score .btn-area button{
+    width: 80%
+}
+.page-score .btn-area button:nth-child(2){
+    margin-top: 15px;
+}
+
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-score .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}

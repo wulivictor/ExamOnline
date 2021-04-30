@@ -1,0 +1,32 @@
+.page-rule{
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+}
+.page-rule .title{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+.page-rule .content{
+    border-top: 1px solid #f0f0f0;
+    background-color: #fff;
+    padding-left: 10px;
+    width: 97%;
+    height: 250px;
+}
+.page-rule .item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    min-height: 45px;
+}
+/* 外层组件的宽度可设置成100%或具体数值 */
+.page-rule .adContainer {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}

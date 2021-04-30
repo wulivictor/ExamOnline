@@ -1,0 +1,26 @@
+<view class="page-score">
+    <view class="score-area">
+        <view class="title">您本次得分为：{{score}}</view>
+        <view class="value-area">
+            <view class="score" style="background-color:{{answers[0] == 1 ? '#07c160' : '#F0392F'}};">1</view>
+            <view class="score" style="background-color:{{answers[1] == 1 ? '#07c160' : '#F0392F'}};">2</view>
+            <view class="score" style="background-color:{{answers[2] == 1 ? '#07c160' : '#F0392F'}};">3</view>
+            <view class="score" style="background-color:{{answers[3] == 1 ? '#07c160' : '#F0392F'}};">4</view>
+            <view class="score" style="background-color:{{answers[4] == 1 ? '#07c160' : '#F0392F'}};">5</view>
+
+            <view class="score" style="background-color:{{answers[5] == 1 ? '#07c160' : '#F0392F'}};">6</view>
+            <view class="score" style="background-color:{{answers[6] == 1 ? '#07c160' : '#F0392F'}};">7</view>
+            <view class="score" style="background-color:{{answers[7] == 1 ? '#07c160' : '#F0392F'}};">8</view>
+            <view class="score" style="background-color:{{answers[8] == 1 ? '#07c160' : '#F0392F'}};">9</view>
+            <view class="score" style="background-color:{{answers[9] == 1 ? '#07c160' : '#F0392F'}};">10</view>
+        </view>
+    </view>
+    <view class="btn-area">
+        <button class="btn" type="primary" bindtap="bindgoview">
+            查看答案
+        </button>
+        <button class="btn" type="default"  open-type="share" bindtap="bindgoview">
+            分享
+        </button>
+    </view>
+</view>

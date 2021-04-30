@@ -1,0 +1,13 @@
+<view class="page-entry">
+    <view class="header">{{name}}</view>
+    <view class="modes">
+        <block wx:for="{{modes}}" wx:key="*this" wx:for-index="idx" wx:for-item="mode">
+            <view class="mode" bindtap="goByMode" data-id="{{mode.id}}">
+                <view class="sortnum">{{idx+1}}</view>
+                <view class="name">{{mode.title}}</view>
+                <view class="arraw">></view>
+            </view>       
+        </block>
+    </view>
+
+</view>

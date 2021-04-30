@@ -1,0 +1,115 @@
+page{
+    background-color: #f8f9fb;
+}
+.exam .sortnumber{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.exam .sortnumber .left{
+    color: #b9bfc6;
+}
+.exam .sortnumber  .right{
+    background-color: #d8f3e7;
+    border-radius: 10px;
+}
+.exam .sortnumber .right text{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1bcfad;
+    display: inline-block;
+}
+.exam .progress{
+    padding: 10px;
+}
+.exam .question{
+    background-color: #f8f9fb;
+}
+.exam .question .title{
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.exam .question .type{
+    background-color: #fff;
+    margin: 5px 0;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.exam .question .options{
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.exam .question .options .option{
+    padding: 10px;
+    border-bottom: 1rpx solid #f8f9fb;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.exam .question .options .option .icon image{
+    width: 20px;
+    height: 20px;
+
+}
+.exam .question .options .option .content{
+    padding-left: 5px;
+}
+
+.exam .btn-area{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.exam .btn-area .button{
+    color: #fff;
+    text-align: center;
+    background-color: #1bcfad;
+    border-radius: 20px;
+    width:375rpx;
+    padding: 5px 15px;
+}
+.exam .btn-area .gray{
+    background-color: #cccfd4;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    width:250px;
+    padding: 10px 15px;
+}
+.exam .footer{
+    padding: 10px;
+}
+.exam .footer .btn-area{
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.exam .footer .btn-area .button{
+    color: #fff;
+    text-align: center;
+    background-color: #7b99fe;
+    border-radius: 20px;
+    width:250px;
+    padding: 10px 15px;
+}
+
+.wrong{
+    background-color: #f9e5e0;
+}

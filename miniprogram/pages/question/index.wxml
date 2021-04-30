@@ -1,0 +1,23 @@
+<wxs src="./../tools.wxs" module="JSON" />
+<view class="page-question">
+    <view class="questions">
+    <block wx:for="{{questions}}" wx:key="id" wx:for-index="idx" wx:for-item="question">
+    <view class="question-container">
+        <view class="question">
+            <view class="title">{{idx+1}}，{{question.title}}</view>
+        </view>
+        <view class="options">
+            <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{question.options}}" wx:key="code">
+                <radio value="{{idx+'|'+JSON.stringify(item)+'|'+JSON.stringify(question)}}"/>{{item.code}}，{{item.content}}
+            </label>
+            </radio-group>
+        </view>
+    </view>
+    </block>
+    </view>
+
+    <view class="btn-area">
+        <button type="primary" bindtap="bindSubmitTap">确认提交</button>
+    </view>                                  
+</view>

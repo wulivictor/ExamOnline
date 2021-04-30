@@ -1,0 +1,33 @@
+<view class="page-view">
+    <view class="question">
+        <view class="title">
+            <text>{{idx+1}}、{{question.title}}</text>
+        </view>
+        <view class="options">
+            <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{options}}" wx:key="{{item.id}}">
+                <block wx:if="{{item.checked}}"> 
+                <view class="option-content"><icon type="success" size="23"/><text>{{item.code}}，{{item.content}}</text></view>
+                </block>
+
+                <block wx:elif="{{!item.checked && score_arr[idx]==0 && code_arr[idx]==item.code}}">
+                <view class="option-content"><icon type="cancel" size="23"/><text>{{item.code}}，{{item.content}}</text></view>
+                </block>
+
+                <block wx:else>
+                    <view class="option-content"><radio value="{{item.value}}" checked="{{item.checked}}"></radio> <text>{{item.code}}，{{item.content}}</text></view>              
+                </block>
+            </label>
+            </radio-group>
+        </view>
+    </view>
+    <view class="btn-area">
+        <button class="btn" type="primary" bindtap="onNextTap">
+            {{buttontext}}
+        </button>
+    </view>
+    <view class="info" wx:if="{{souce!='history' && score_arr[idx] == 0}}">
+        <view>正确答案：{{rightCode}}</view>
+        <view>您的选项：{{code_arr[idx]}}</view>
+    </view>
+</view>
