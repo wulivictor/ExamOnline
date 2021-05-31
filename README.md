@@ -9,7 +9,7 @@
 
 ## 小程序功能截图
 
-<img src = "https://images.gitee.com/uploads/images/2021/0531/153026_92e30bf1_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2021/0531/153050_cf709597_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2021/0531/153058_8f0417db_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2021/0531/153104_39433dcb_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2021/0531/153110_a071a370_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2021/0531/153116_b9231a31_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2021/0531/153026_92e30bf1_1947212.png" width = "30%"> <img src = "https://images.gitee.com/uploads/images/2021/0531/153050_cf709597_1947212.png" width = "30%"> <img src = "https://images.gitee.com/uploads/images/2021/0531/153058_8f0417db_1947212.png" width = "30%"> <img src = "https://images.gitee.com/uploads/images/2021/0531/153104_39433dcb_1947212.png" width = "30%"> <img src = "https://images.gitee.com/uploads/images/2021/0531/153110_a071a370_1947212.png" width = "30%"> <img src = "https://images.gitee.com/uploads/images/2021/0531/153116_b9231a31_1947212.png" width = "30%">
 
 
 ## 联系
