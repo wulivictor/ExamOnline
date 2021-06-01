@@ -1,6 +1,6 @@
 ## 介绍
- 在校考试答题小程序，主要用于企业、事业单位、政府机构、学校和教育培训机构在线答题，在线模拟考试，企业内部考核评测，党建答题 ，在线刷题备考等场景 。
- 前后端和数据库开源，也非常适合做毕业设计参考项目。
+ 在校考试答题小程序，主要用于企业、事业单位、政府机构、学校和教育培训机构在线答题，在线模拟考试，企业内部考核评测，党建答题，在线刷题备考等场景 。
+
 
 ## 联系
 
@@ -12,16 +12,6 @@
 ## 如何体验  扫描下方二维码即可体验小程序的完整功能
 
 <img src = "https://images.gitee.com/uploads/images/2021/0418/080852_b75b96c6_1947212.jpeg" width = "20%">
-
-
-## 小程序功能截图
-
-<img src = "https://images.gitee.com/uploads/images/2021/0531/153026_92e30bf1_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2021/0531/153050_cf709597_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2021/0531/153058_8f0417db_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2021/0531/153104_39433dcb_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2021/0531/153110_a071a370_1947212.png" width = "30%">
-<img src = "https://images.gitee.com/uploads/images/2021/0531/153116_b9231a31_1947212.png" width = "30%">
 
 
 ##  如果您是某某培训机构，学校，政府，公司，因为题库私密不能对外开放，需要单独搭建小程序的，欢迎咨询，可以提供部署和定制开发服务。
