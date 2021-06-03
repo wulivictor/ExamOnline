@@ -13,6 +13,16 @@
 
 <img src = "https://images.gitee.com/uploads/images/2021/0418/080852_b75b96c6_1947212.jpeg" width = "20%">
 
+## 小程序功能截图
+
+<img src = "https://images.gitee.com/uploads/images/2021/0531/153026_92e30bf1_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2021/0531/153050_cf709597_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2021/0531/153058_8f0417db_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2021/0531/153104_39433dcb_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2021/0531/153110_a071a370_1947212.png" width = "30%">
+<img src = "https://images.gitee.com/uploads/images/2021/0531/153116_b9231a31_1947212.png" width = "30%">
+
+
 
 ##  如果您是某某培训机构，学校，政府，公司，因为题库私密不能对外开放，需要单独搭建小程序的，欢迎咨询，可以提供部署和定制开发服务。
 
