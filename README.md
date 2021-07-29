@@ -1,6 +1,6 @@
 ## 介绍
      在校考试答题小程序，主要用于企业、事业单位、政府机构、学校和教育培训机构在线答题，毕业设计,在线模拟考试，在线刷题备考等场景。
-     
+      
 ## 搭建教程
      https://developers.weixin.qq.com/community/develop/article/doc/0000221e880be024941ca52fa51813
 
