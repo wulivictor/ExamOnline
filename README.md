@@ -1,12 +1,14 @@
 ## 介绍
-微信小程序，考试小程序，答题小程序，刷题小程序。毕业设计小程序，有前后端完整源码和数据库，易于二次开发。还可用于考试预约，企业内部考核，内部培训等，注册师刷题，基于云开发，部署简单，免服务器和域名备案。
+微信小程序，考试小程序，答题小程序，刷题小程序。毕业设计小程序，有前后端完整源码和数据库，易于二次开发。还可用于考试预约，企业内部考核，内部培训等，职业考试刷题，基于云开发，部署简单，免服务器和域名备案。
 
 
-## 联系
+## 学习咨询
 
-目前小程序已经发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我 (备注好来自码云)
+目前小程序已经发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我   music9866  (备注好来自github)
 
-## 如果您是某某培训机构，学校，政府，公司，因为题库私密不能对外开放，需要单独搭建小程序的，欢迎咨询，可以提供部署和定制开发服务。
+## 合作
+
+如果您是某某培训机构，学校，政府，公司，因为题库私密不能对外开放，需要单独搭建小程序的，欢迎咨询，可以提供部署和定制开发服务。
 
 
 <img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
@@ -15,19 +17,24 @@
 ## 小程序功能截图
 | 主界面  | 题库分类 | 考试提示 |
 
-
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094244_c98fbc5c_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094251_99b3f179_1947212.png" width = "30%"> <img src = "https://images.gitee.com/uploads/images/2021/0902/094257_9cf44a1b_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094244_c98fbc5c_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094251_99b3f179_1947212.png" width = "30%"> 
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094257_9cf44a1b_1947212.png" width = "30%">  
 
 
 
 | 答题  | 考试成绩 | 我的错题 |
 
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094305_dda0d7e9_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094311_8de94155_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094322_343884b5_1947212.png" width = "30%">  
-
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094305_dda0d7e9_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094311_8de94155_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094322_343884b5_1947212.png" width = "30%">  
 
 | 排名  | 我的成绩 | 个人 |
 
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094330_2cb1a4ab_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094720_c97b2558_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094357_20c12d7f_1947212.png" width = "30%">  
+
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094330_2cb1a4ab_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094720_c97b2558_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094357_20c12d7f_1947212.png" width = "30%">  
 
 
 
