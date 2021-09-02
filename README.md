@@ -26,6 +26,7 @@
 
 
 | 排名  | 我的成绩 | 个人 |
+
 <img src = "https://images.gitee.com/uploads/images/2021/0902/094330_2cb1a4ab_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094720_c97b2558_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094357_20c12d7f_1947212.png" width = "30%">  
 
 
