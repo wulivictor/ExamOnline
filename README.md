@@ -11,7 +11,7 @@
 
 <img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
     
-
+    
 ## 小程序功能截图
 | 主界面  | 题库分类 | 考试提示 |
 
@@ -47,7 +47,7 @@
 	 
 ## 自助搭建教程
     https://developers.weixin.qq.com/community/develop/article/doc/0000221e880be024941ca52fa51813
-
+   
 ## 特点
 + 答题分单题模式和列表模式
 + 查看分数
