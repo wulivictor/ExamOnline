@@ -11,12 +11,11 @@
 
 <img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
     
-    
+  
 ## 小程序功能截图
 | 主界面  | 题库分类 | 考试提示 |
 
 <img src = "https://images.gitee.com/uploads/images/2021/0902/094244_c98fbc5c_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094251_99b3f179_1947212.png" width = "30%"> <img src = "https://images.gitee.com/uploads/images/2021/0902/094257_9cf44a1b_1947212.png" width = "30%">  
-
 
 
 | 答题  | 考试成绩 | 我的错题 |
@@ -47,7 +46,7 @@
 	 
 ## 自助搭建教程
     https://developers.weixin.qq.com/community/develop/article/doc/0000221e880be024941ca52fa51813
-   
+      
 ## 特点
 + 答题分单题模式和列表模式
 + 查看分数
