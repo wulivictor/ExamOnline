@@ -28,7 +28,6 @@
 <img src = "https://images.gitee.com/uploads/images/2021/0902/094330_2cb1a4ab_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094720_c97b2558_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094357_20c12d7f_1947212.png" width = "30%">  
 
 ## 后台截图
-    后台可以批量导入题库，管理用户数据，查看考试详情等操作
 <img src = "https://images.gitee.com/uploads/images/2021/0902/095442_4a1f061f_1947212.png" width = "80%"> 
 
 <img src = "https://images.gitee.com/uploads/images/2021/0817/090039_6c0bf086_1947212.png" width = "80%"> 
@@ -37,15 +36,16 @@
      1 ·企业招聘考试。候选人等候时面试可手机扫码参加笔试，系统实时生成结果，一个简单的考核就可让面试官提前了解候选人的能力
      情况。在大规模校园聘会上公布考试地址，考生现场完成考试，现场出分，主办方可快速筛选合格考生参加面试，大大缩短招聘周期和成本。
 
-     2 ·员工晋升考核。员工专业技能是否达标，员工素质测评，安排一场考试即可对员工是否晋升进行有理的判断。全面电子化式考试，
-     可大大缩短员工考核周期与成本。
+     2 ·企事业举报活动，知识竞赛，可以在某一个时间段发布活动，供用户参加比赛，前几名可以获得奖品。
 
      3 ·培训认证考试。培训机构结业认证考核，行业从业资格认证，能力认证考核等，题答答提供从考生报名到参加考试的全流程功能。
      无限制题库刷题，错题训练，随机题序，答案解析，错题本重练，让刷题不止追求量，也有质的保障，帮助考生更熟练地掌握知识点，
      提高考试通过率。
 	     
-## 自助搭建教程
+## 小程序自助搭建教程
     https://developers.weixin.qq.com/community/develop/article/doc/0000221e880be024941ca52fa51813
+## 后台管理系统自助搭建教程
+    https://developers.weixin.qq.com/community/develop/article/doc/000e84e25186c00a74fcd372a5b813
       
 ## 特点
 + 答题分单题模式和列表模式
