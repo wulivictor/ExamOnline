@@ -39,7 +39,9 @@
 
         
 ## 后台截图  
-![输入图片说明](Screenshot%202024-06-28%20080541_%E7%9C%8B%E5%9B%BE%E7%8E%8B.png)               
+
+<img src = "https://gitee.com/wulivicor/exam/raw/master/Screenshot%202024-06-28%20080541_%E7%9C%8B%E5%9B%BE%E7%8E%8B.png" width = "100%">  
+
 ## 适用场景   
   
      1 ·考公考研机构训练学生。可以发布考试给学员训练或者上传题库和学习资料给学员学习使用，帮助他们更从容的准备考试。
