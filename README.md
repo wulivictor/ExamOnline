@@ -26,15 +26,11 @@
 
 | 答题考试  | 考试成绩 | 我的错题 |
     
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094305_dda0d7e9_1947212.png" width = "30%">  
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094311_8de94155_1947212.png" width = "30%">  
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094322_343884b5_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094305_dda0d7e9_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094311_8de94155_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094322_343884b5_1947212.png" width = "30%">  
 
 | 考试排名  | 我的成绩 | 个人信息 |
    
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094330_2cb1a4ab_1947212.png" width = "30%">  
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094720_c97b2558_1947212.png" width = "30%">  
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094357_20c12d7f_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094330_2cb1a4ab_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094720_c97b2558_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094357_20c12d7f_1947212.png" width = "30%">  
 
 | 文章列表  | 题库列表 | 付费详情 |
 
