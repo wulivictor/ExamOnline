@@ -34,9 +34,7 @@
 
 | 文章列表  | 题库列表 | 付费详情 |
 
-<img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/3.jpg" width = "30%">  
-<img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/10000.jpg" width = "30%">  
-<img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/21.png" width = "30%">  
+<img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/3.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/10000.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/21.png" width = "30%">  
 
 
         
