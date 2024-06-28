@@ -22,9 +22,7 @@
 ## 小程序功能截图              
 | 主界面  | 题库分类 | 模拟考试 |   
 
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094244_c98fbc5c_1947212.png" width = "30%">  
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094251_99b3f179_1947212.png" width = "30%"> 
-<img src = "https://images.gitee.com/uploads/images/2021/0902/094257_9cf44a1b_1947212.png" width = "30%">  
+<img src = "https://images.gitee.com/uploads/images/2021/0902/094244_c98fbc5c_1947212.png" width = "30%">  <img src = "https://images.gitee.com/uploads/images/2021/0902/094251_99b3f179_1947212.png" width = "30%"><img src = "https://images.gitee.com/uploads/images/2021/0902/094257_9cf44a1b_1947212.png" width = "30%">  
 
 | 答题考试  | 考试成绩 | 我的错题 |
     
