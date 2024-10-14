@@ -42,7 +42,7 @@
         
 ## 后台截图  
 
-<img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/Screenshot%202024-06-28%20080541_%E7%9C%8B%E5%9B%BE%E7%8E%8B.png" width = "100%">  
+<img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/Screenshot123.png" width = "100%">  
 
 ## 适用场景   
   
