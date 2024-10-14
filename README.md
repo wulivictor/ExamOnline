@@ -19,7 +19,7 @@
 
 | 文章列表  | 题库列表 | 付费详情 |
 
-<img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/3.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/10000.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/21.png" width = "30%">  
+<img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/3.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/10000.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/21.png" width = "30%">  
 
 ## 合作&&定制                                                                                                                                                                               
                     
@@ -42,7 +42,7 @@
         
 ## 后台截图  
 
-<img src = "https://gitee.com/wulivicor/exam/raw/master/Screenshot%202024-06-28%20080541_%E7%9C%8B%E5%9B%BE%E7%8E%8B.png" width = "100%">  
+<img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/Screenshot%202024-06-28%20080541_%E7%9C%8B%E5%9B%BE%E7%8E%8B.png" width = "100%">  
 
 ## 适用场景   
   
