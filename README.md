@@ -1,22 +1,7 @@
 ## 介绍
 微信小程序，考试小程序，答题小程序，刷题小程序。有前后端完整源码和数据库，易于二次开发。部署简单轻松上线。
  
-## 支持会员体系
-会员可以按折扣购买题库，支持题库在线支付购买。          
-         
-## 支持学员体系
-学员可以无偿使用特定内部题库，支持题库激活码解锁。                
 
-                                                                                                                                    
-## 合作&&定制                                                                                                                                                                               
-                    
-如果您是某某培训学校，政府，公司，事业单位，因为题库私密不能对外开放或者是特定题库，需要单独搭建小程序的，欢迎咨询，可以提供部署和定制开发服务。
-             
-## 学习咨询              
-    
-目前小程序已经发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我    music9866  (备注好来自github)   
-
-<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
           
                        
 ## 小程序功能截图              
@@ -36,7 +21,22 @@
 
 <img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/3.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/10000.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam/raw/master/miniprogram/images/21.png" width = "30%">  
 
+## 支持会员体系
+会员可以按折扣购买题库，支持题库在线支付购买。          
+         
+## 支持学员体系
+学员可以无偿使用特定内部题库，支持题库激活码解锁。                
 
+                                                                                                                                    
+## 合作&&定制                                                                                                                                                                               
+                    
+如果您是某某培训学校，政府，公司，事业单位，因为题库私密不能对外开放或者是特定题库，需要单独搭建小程序的，欢迎咨询，可以提供部署和定制开发服务。
+             
+## 学习咨询              
+    
+目前小程序已经发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我    music9866  (备注好来自github)   
+
+<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
         
 ## 后台截图  
 
