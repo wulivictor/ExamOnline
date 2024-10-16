@@ -28,6 +28,7 @@
 ## 学习咨询    
 
 目前小程序已经发布，大家可以体验下，在学习的过程中遇到问题，可以咨询我    music9866  (备注好来自github)   
+<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
 
 ## 支持会员体系
 会员可以按折扣购买题库，支持题库在线支付购买。          
@@ -38,7 +39,6 @@
              
 
 
-<img src = "https://images.gitee.com/uploads/images/2020/0726/161524_56919255_1947212.jpeg" width = "30%">
         
 ## 后台截图  
 
