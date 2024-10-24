@@ -1,8 +1,7 @@
 ## 介绍&&体验
 微信小程序，考试小程序，答题小程序，刷题小程序。有前后端完整源码和数据库，易于二次开发。部署简单轻松上线。
  
-<img src = "https://gitee.com/wulivictor/exam-mini/raw/master/miniprogram/images/exp1.jpg" width = "30%">  
-<img src = "https://gitee.com/wulivictor/exam-mini/raw/master/miniprogram/images/exp2.jpg" width = "30%">      
+<img src = "https://gitee.com/wulivictor/exam-mini/raw/master/miniprogram/images/exp1.jpg" width = "30%">  <img src = "https://gitee.com/wulivictor/exam-mini/raw/master/miniprogram/images/exp2.jpg" width = "30%">      
 
           
                        
