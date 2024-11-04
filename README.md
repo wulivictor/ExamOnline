@@ -20,7 +20,7 @@
 
 | 文章列表  | 题库列表 | 付费详情 |
 
-<img src = "miniprogram/images/3.jpg" width = "30%">  <img src = "miniprogram/images/10000.jpg" width = "30%">  <img src = "miniprogram/images/21.jpg" width = "30%">  
+<img src = "./miniprogram/images/3.jpg" width = "30%">  <img src = "./miniprogram/images/10000.jpg" width = "30%">  <img src = "./miniprogram/images/21.jpg" width = "30%">  
 
 ## 合作&&定制                                                                                                                                                                               
                     
