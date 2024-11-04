@@ -20,7 +20,7 @@
 
 | 文章列表  | 题库列表 | 付费详情 |
 
-<img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/3.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/10000.jpg" width = "30%">  <img src = "https://gitee.com/wulivicor/exam-miniprogram/raw/master/miniprogram/images/21.png" width = "30%">  
+<img src = "https://mmbiz.qpic.cn/sz_mmbiz_jpg/a3QgysqKMqicB1WFqv2MiauiaSg5UR5yPWicezODiapFFbO8dqSb8MFd38ocEK3buU5Djp7icGxa5u4ytGc4Iic4Kjn0g/640?wx_fmt=jpeg&from=appms" width = "30%">  <img src = "https://mmbiz.qpic.cn/sz_mmbiz_jpg/a3QgysqKMqicB1WFqv2MiauiaSg5UR5yPWicFwKL6PGavJHqPKZLxzzZ3Jg5OkITibWbd2cLPM20Kr3NcuTJzaZicicBA/640?wx_fmt=jpeg&amp;from=appmsg" width = "30%">  <img src = "https://mmbiz.qpic.cn/sz_mmbiz_png/a3QgysqKMqicB1WFqv2MiauiaSg5UR5yPWicIVckqhHRwOcrsjcYIQQTtqH5Qe1KIOJH5vVsmF8JcIpeBQwUicrGRqA/640?wx_fmt=png&amp;from=appmsg" width = "30%">  
 
 ## 合作&&定制                                                                                                                                                                               
                     
