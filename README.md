@@ -59,9 +59,9 @@
      提高考试通过率。       
 	    
 ## 小程序自助搭建教程   
-    https://developers.weixin.qq.com/community/develop/article/doc/0000221e880be024941ca52fa51813
+    https://gitee.com/wulivictor/exam-mini/blob/master/deploy.md
 ## 后台管理系统自助搭建教程
-    https://developers.weixin.qq.com/community/develop/article/doc/000e84e25186c00a74fcd372a5b813
+    https://gitee.com/wulivictor/exam-mini/blob/master/deploy.md
     
 ## 特点
 + 支持单选、多选、填空、判断、阅读理解等8大题型
